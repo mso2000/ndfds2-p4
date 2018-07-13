@@ -1,0 +1,1314 @@
+Min. Threshold: 0.0
+Range: (1, 20)
+
+************************************
+Testando com K = 1 features
+
+- (0.00) poi
+- (22.51) total_stock_value
+************************************
+
+>>> Best Estimator:
+
+GaussianNB(priors=None)
+
+>>> Best Parameters:
+
+{'priors': None}
+
+>>> Test Results:
+
+    	Accuracy: 0.84946	Precision: 0.52392	    Recall: 0.23550	F1: 0.32494	F2: 0.26464
+	Total predictions: 13000	True positives:  471	False positives:  428    	False negatives: 1529	True negatives: 10572
+
+************************************
+
+>>> Best Estimator:
+
+LogisticRegression(C=0.05, class_weight='balanced', dual=False,
+          fit_intercept=True, intercept_scaling=1, max_iter=100,
+          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
+          solver='liblinear', tol=0.1, verbose=0, warm_start=False)
+
+>>> Best Parameters:
+
+{'C': 0.05, 'tol': 0.1, 'class_weight': 'balanced'}
+
+>>> Test Results:
+
+    	Accuracy: 0.15385	Precision: 0.15385	    Recall: 1.00000	F1: 0.26667	F2: 0.47619
+	Total predictions: 13000	True positives: 2000	False positives: 11000    	False negatives:    0	True negatives:    0
+
+************************************
+
+>>> Best Estimator:
+
+DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_impurity_split=None,
+            min_samples_leaf=1, min_samples_split=10,
+            min_weight_fraction_leaf=0.0, presort=False, random_state=None,
+            splitter='best')
+
+>>> Best Parameters:
+
+{'min_samples_split': 10, 'criterion': 'gini'}
+
+>>> Test Results:
+
+    	Accuracy: 0.80085	Precision: 0.30142	    Recall: 0.22350	F1: 0.25668	F2: 0.23568
+	Total predictions: 13000	True positives:  447	False positives: 1036    	False negatives: 1553	True negatives: 9964
+
+************************************
+
+************************************
+Testando com K = 2 features
+
+- (0.00) poi
+- (22.51) total_stock_value
+- (22.35) exercised_stock_options
+************************************
+
+>>> Best Estimator:
+
+GaussianNB(priors=None)
+
+>>> Best Parameters:
+
+{'priors': None}
+
+>>> Test Results:
+
+    	Accuracy: 0.84223	Precision: 0.47696	    Recall: 0.26400	F1: 0.33988	F2: 0.28989
+	Total predictions: 13000	True positives:  528	False positives:  579    	False negatives: 1472	True negatives: 10421
+
+************************************
+
+>>> Best Estimator:
+
+LogisticRegression(C=0.05, class_weight='balanced', dual=False,
+          fit_intercept=True, intercept_scaling=1, max_iter=100,
+          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
+          solver='liblinear', tol=1e-10, verbose=0, warm_start=False)
+
+>>> Best Parameters:
+
+{'C': 0.05, 'tol': 1e-10, 'class_weight': 'balanced'}
+
+>>> Test Results:
+
+    	Accuracy: 0.44223	Precision: 0.16327	    Recall: 0.63650	F1: 0.25988	F2: 0.40292
+	Total predictions: 13000	True positives: 1273	False positives: 6524    	False negatives:  727	True negatives: 4476
+
+************************************
+
+>>> Best Estimator:
+
+DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_impurity_split=None,
+            min_samples_leaf=1, min_samples_split=20,
+            min_weight_fraction_leaf=0.0, presort=False, random_state=None,
+            splitter='best')
+
+>>> Best Parameters:
+
+{'min_samples_split': 20, 'criterion': 'gini'}
+
+>>> Test Results:
+
+    	Accuracy: 0.83077	Precision: 0.41304	    Recall: 0.23750	F1: 0.30159	F2: 0.25956
+	Total predictions: 13000	True positives:  475	False positives:  675    	False negatives: 1525	True negatives: 10325
+
+************************************
+
+************************************
+Testando com K = 3 features
+
+- (0.00) poi
+- (22.51) total_stock_value
+- (22.35) exercised_stock_options
+- (20.79) bonus
+************************************
+
+>>> Best Estimator:
+
+GaussianNB(priors=None)
+
+>>> Best Parameters:
+
+{'priors': None}
+
+>>> Test Results:
+
+    	Accuracy: 0.84477	Precision: 0.49340	    Recall: 0.33650	F1: 0.40012	F2: 0.35935
+	Total predictions: 13000	True positives:  673	False positives:  691    	False negatives: 1327	True negatives: 10309
+
+************************************
+
+>>> Best Estimator:
+
+LogisticRegression(C=100, class_weight='balanced', dual=False,
+          fit_intercept=True, intercept_scaling=1, max_iter=100,
+          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
+          solver='liblinear', tol=1e-10, verbose=0, warm_start=False)
+
+>>> Best Parameters:
+
+{'C': 100, 'tol': 1e-10, 'class_weight': 'balanced'}
+
+>>> Test Results:
+
+    	Accuracy: 0.57969	Precision: 0.20413	    Recall: 0.59750	F1: 0.30430	F2: 0.43128
+	Total predictions: 13000	True positives: 1195	False positives: 4659    	False negatives:  805	True negatives: 6341
+
+************************************
+
+>>> Best Estimator:
+
+DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_impurity_split=None,
+            min_samples_leaf=1, min_samples_split=15,
+            min_weight_fraction_leaf=0.0, presort=False, random_state=None,
+            splitter='best')
+
+>>> Best Parameters:
+
+{'min_samples_split': 15, 'criterion': 'gini'}
+
+>>> Test Results:
+
+    	Accuracy: 0.81700	Precision: 0.33156	    Recall: 0.18650	F1: 0.23872	F2: 0.20438
+	Total predictions: 13000	True positives:  373	False positives:  752    	False negatives: 1627	True negatives: 10248
+
+************************************
+
+************************************
+Testando com K = 4 features
+
+- (0.00) poi
+- (22.51) total_stock_value
+- (22.35) exercised_stock_options
+- (20.79) bonus
+- (18.29) salary
+************************************
+
+>>> Best Estimator:
+
+GaussianNB(priors=None)
+
+>>> Best Parameters:
+
+{'priors': None}
+
+>>> Test Results:
+
+    	Accuracy: 0.83915	Precision: 0.46597	    Recall: 0.31150	F1: 0.37339	F2: 0.33362
+	Total predictions: 13000	True positives:  623	False positives:  714    	False negatives: 1377	True negatives: 10286
+
+************************************
+
+>>> Best Estimator:
+
+LogisticRegression(C=10000000000L, class_weight='balanced', dual=False,
+          fit_intercept=True, intercept_scaling=1, max_iter=100,
+          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
+          solver='liblinear', tol=1e-10, verbose=0, warm_start=False)
+
+>>> Best Parameters:
+
+{'C': 10000000000L, 'tol': 1e-10, 'class_weight': 'balanced'}
+
+>>> Test Results:
+
+    	Accuracy: 0.66362	Precision: 0.22793	    Recall: 0.49700	F1: 0.31253	F2: 0.40207
+	Total predictions: 13000	True positives:  994	False positives: 3367    	False negatives: 1006	True negatives: 7633
+
+************************************
+
+>>> Best Estimator:
+
+DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_impurity_split=None,
+            min_samples_leaf=1, min_samples_split=15,
+            min_weight_fraction_leaf=0.0, presort=False, random_state=None,
+            splitter='best')
+
+>>> Best Parameters:
+
+{'min_samples_split': 15, 'criterion': 'gini'}
+
+>>> Test Results:
+
+    	Accuracy: 0.81115	Precision: 0.32378	    Recall: 0.20900	F1: 0.25403	F2: 0.22495
+	Total predictions: 13000	True positives:  418	False positives:  873    	False negatives: 1582	True negatives: 10127
+
+************************************
+
+************************************
+Testando com K = 5 features
+
+- (0.00) poi
+- (22.51) total_stock_value
+- (22.35) exercised_stock_options
+- (20.79) bonus
+- (18.29) salary
+- (11.42) deferred_income
+************************************
+
+>>> Best Estimator:
+
+GaussianNB(priors=None)
+
+>>> Best Parameters:
+
+{'priors': None}
+
+>>> Test Results:
+
+    	Accuracy: 0.84700	Precision: 0.45408	    Recall: 0.35100	F1: 0.39594	F2: 0.36769
+	Total predictions: 14000	True positives:  702	False positives:  844    	False negatives: 1298	True negatives: 11156
+
+************************************
+
+>>> Best Estimator:
+
+LogisticRegression(C=10, class_weight='balanced', dual=False,
+          fit_intercept=True, intercept_scaling=1, max_iter=100,
+          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
+          solver='liblinear', tol=1e-10, verbose=0, warm_start=False)
+
+>>> Best Parameters:
+
+{'C': 10, 'tol': 1e-10, 'class_weight': 'balanced'}
+
+>>> Test Results:
+
+    	Accuracy: 0.65157	Precision: 0.20929	    Recall: 0.51800	F1: 0.29813	F2: 0.40000
+	Total predictions: 14000	True positives: 1036	False positives: 3914    	False negatives:  964	True negatives: 8086
+
+************************************
+
+>>> Best Estimator:
+
+DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_impurity_split=None,
+            min_samples_leaf=1, min_samples_split=10,
+            min_weight_fraction_leaf=0.0, presort=False, random_state=None,
+            splitter='best')
+
+>>> Best Parameters:
+
+{'min_samples_split': 10, 'criterion': 'gini'}
+
+>>> Test Results:
+
+    	Accuracy: 0.82014	Precision: 0.34012	    Recall: 0.27550	F1: 0.30442	F2: 0.28638
+	Total predictions: 14000	True positives:  551	False positives: 1069    	False negatives: 1449	True negatives: 10931
+
+************************************
+
+************************************
+Testando com K = 6 features
+
+- (0.00) poi
+- (22.51) total_stock_value
+- (22.35) exercised_stock_options
+- (20.79) bonus
+- (18.29) salary
+- (11.42) deferred_income
+- (9.92) long_term_incentive
+************************************
+
+>>> Best Estimator:
+
+GaussianNB(priors=None)
+
+>>> Best Parameters:
+
+{'priors': None}
+
+>>> Test Results:
+
+    	Accuracy: 0.84179	Precision: 0.43497	    Recall: 0.35950	F1: 0.39365	F2: 0.37242
+	Total predictions: 14000	True positives:  719	False positives:  934    	False negatives: 1281	True negatives: 11066
+
+************************************
+
+>>> Best Estimator:
+
+LogisticRegression(C=1, class_weight='balanced', dual=False,
+          fit_intercept=True, intercept_scaling=1, max_iter=100,
+          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
+          solver='liblinear', tol=1e-10, verbose=0, warm_start=False)
+
+>>> Best Parameters:
+
+{'C': 1, 'tol': 1e-10, 'class_weight': 'balanced'}
+
+>>> Test Results:
+
+    	Accuracy: 0.63857	Precision: 0.19727	    Recall: 0.49850	F1: 0.28268	F2: 0.38188
+	Total predictions: 14000	True positives:  997	False positives: 4057    	False negatives: 1003	True negatives: 7943
+
+************************************
+
+>>> Best Estimator:
+
+DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_impurity_split=None,
+            min_samples_leaf=1, min_samples_split=20,
+            min_weight_fraction_leaf=0.0, presort=False, random_state=None,
+            splitter='best')
+
+>>> Best Parameters:
+
+{'min_samples_split': 20, 'criterion': 'entropy'}
+
+>>> Test Results:
+
+    	Accuracy: 0.80764	Precision: 0.19417	    Recall: 0.11000	F1: 0.14044	F2: 0.12044
+	Total predictions: 14000	True positives:  220	False positives:  913    	False negatives: 1780	True negatives: 11087
+
+************************************
+
+************************************
+Testando com K = 7 features
+
+- (0.00) poi
+- (22.51) total_stock_value
+- (22.35) exercised_stock_options
+- (20.79) bonus
+- (18.29) salary
+- (11.42) deferred_income
+- (9.92) long_term_incentive
+- (9.28) total_payments
+************************************
+
+>>> Best Estimator:
+
+GaussianNB(priors=None)
+
+>>> Best Parameters:
+
+{'priors': None}
+
+>>> Test Results:
+
+    	Accuracy: 0.85047	Precision: 0.42486	    Recall: 0.34350	F1: 0.37987	F2: 0.35718
+	Total predictions: 15000	True positives:  687	False positives:  930    	False negatives: 1313	True negatives: 12070
+
+************************************
+
+>>> Best Estimator:
+
+LogisticRegression(C=1, class_weight='balanced', dual=False,
+          fit_intercept=True, intercept_scaling=1, max_iter=100,
+          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
+          solver='liblinear', tol=1e-10, verbose=0, warm_start=False)
+
+>>> Best Parameters:
+
+{'C': 1, 'tol': 1e-10, 'class_weight': 'balanced'}
+
+>>> Test Results:
+
+    	Accuracy: 0.65967	Precision: 0.19129	    Recall: 0.48100	F1: 0.27372	F2: 0.36918
+	Total predictions: 15000	True positives:  962	False positives: 4067    	False negatives: 1038	True negatives: 8933
+
+************************************
+
+>>> Best Estimator:
+
+DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_impurity_split=None,
+            min_samples_leaf=1, min_samples_split=20,
+            min_weight_fraction_leaf=0.0, presort=False, random_state=None,
+            splitter='best')
+
+>>> Best Parameters:
+
+{'min_samples_split': 20, 'criterion': 'entropy'}
+
+>>> Test Results:
+
+    	Accuracy: 0.81587	Precision: 0.17042	    Recall: 0.09850	F1: 0.12484	F2: 0.10758
+	Total predictions: 15000	True positives:  197	False positives:  959    	False negatives: 1803	True negatives: 12041
+
+************************************
+
+************************************
+Testando com K = 8 features
+
+- (0.00) poi
+- (22.51) total_stock_value
+- (22.35) exercised_stock_options
+- (20.79) bonus
+- (18.29) salary
+- (11.42) deferred_income
+- (9.92) long_term_incentive
+- (9.28) total_payments
+- (8.83) restricted_stock
+************************************
+
+>>> Best Estimator:
+
+GaussianNB(priors=None)
+
+>>> Best Parameters:
+
+{'priors': None}
+
+>>> Test Results:
+
+    	Accuracy: 0.84700	Precision: 0.41088	    Recall: 0.34000	F1: 0.37209	F2: 0.35215
+	Total predictions: 15000	True positives:  680	False positives:  975    	False negatives: 1320	True negatives: 12025
+
+************************************
+
+>>> Best Estimator:
+
+LogisticRegression(C=0.5, class_weight='balanced', dual=False,
+          fit_intercept=True, intercept_scaling=1, max_iter=100,
+          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
+          solver='liblinear', tol=1e-10, verbose=0, warm_start=False)
+
+>>> Best Parameters:
+
+{'C': 0.5, 'tol': 1e-10, 'class_weight': 'balanced'}
+
+>>> Test Results:
+
+    	Accuracy: 0.66647	Precision: 0.21760	    Recall: 0.57850	F1: 0.31625	F2: 0.43441
+	Total predictions: 15000	True positives: 1157	False positives: 4160    	False negatives:  843	True negatives: 8840
+
+************************************
+
+>>> Best Estimator:
+
+DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_impurity_split=None,
+            min_samples_leaf=1, min_samples_split=25,
+            min_weight_fraction_leaf=0.0, presort=False, random_state=None,
+            splitter='best')
+
+>>> Best Parameters:
+
+{'min_samples_split': 25, 'criterion': 'entropy'}
+
+>>> Test Results:
+
+    	Accuracy: 0.81993	Precision: 0.14051	    Recall: 0.06850	F1: 0.09210	F2: 0.07632
+	Total predictions: 15000	True positives:  137	False positives:  838    	False negatives: 1863	True negatives: 12162
+
+************************************
+
+************************************
+Testando com K = 9 features
+
+- (0.00) poi
+- (22.51) total_stock_value
+- (22.35) exercised_stock_options
+- (20.79) bonus
+- (18.29) salary
+- (11.42) deferred_income
+- (9.92) long_term_incentive
+- (9.28) total_payments
+- (8.83) restricted_stock
+- (8.59) shared_receipt_with_poi
+************************************
+
+>>> Best Estimator:
+
+GaussianNB(priors=None)
+
+>>> Best Parameters:
+
+{'priors': None}
+
+>>> Test Results:
+
+    	Accuracy: 0.84093	Precision: 0.38882	    Recall: 0.33750	F1: 0.36135	F2: 0.34665
+	Total predictions: 15000	True positives:  675	False positives: 1061    	False negatives: 1325	True negatives: 11939
+
+************************************
+
+>>> Best Estimator:
+
+LogisticRegression(C=100000, class_weight='balanced', dual=False,
+          fit_intercept=True, intercept_scaling=1, max_iter=100,
+          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
+          solver='liblinear', tol=1e-10, verbose=0, warm_start=False)
+
+>>> Best Parameters:
+
+{'C': 100000, 'tol': 1e-10, 'class_weight': 'balanced'}
+
+>>> Test Results:
+
+    	Accuracy: 0.65420	Precision: 0.19757	    Recall: 0.52050	F1: 0.28642	F2: 0.39227
+	Total predictions: 15000	True positives: 1041	False positives: 4228    	False negatives:  959	True negatives: 8772
+
+************************************
+
+>>> Best Estimator:
+
+DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_impurity_split=None,
+            min_samples_leaf=1, min_samples_split=25,
+            min_weight_fraction_leaf=0.0, presort=False, random_state=None,
+            splitter='best')
+
+>>> Best Parameters:
+
+{'min_samples_split': 25, 'criterion': 'entropy'}
+
+>>> Test Results:
+
+    	Accuracy: 0.81727	Precision: 0.15341	    Recall: 0.08200	F1: 0.10688	F2: 0.09042
+	Total predictions: 15000	True positives:  164	False positives:  905    	False negatives: 1836	True negatives: 12095
+
+************************************
+
+************************************
+Testando com K = 10 features
+
+- (0.00) poi
+- (22.51) total_stock_value
+- (22.35) exercised_stock_options
+- (20.79) bonus
+- (18.29) salary
+- (11.42) deferred_income
+- (9.92) long_term_incentive
+- (9.28) total_payments
+- (8.83) restricted_stock
+- (8.59) shared_receipt_with_poi
+- (7.18) loan_advances
+************************************
+
+>>> Best Estimator:
+
+GaussianNB(priors=None)
+
+>>> Best Parameters:
+
+{'priors': None}
+
+>>> Test Results:
+
+    	Accuracy: 0.82227	Precision: 0.32584	    Recall: 0.31150	F1: 0.31851	F2: 0.31427
+	Total predictions: 15000	True positives:  623	False positives: 1289    	False negatives: 1377	True negatives: 11711
+
+************************************
+
+>>> Best Estimator:
+
+LogisticRegression(C=100, class_weight='balanced', dual=False,
+          fit_intercept=True, intercept_scaling=1, max_iter=100,
+          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
+          solver='liblinear', tol=1e-10, verbose=0, warm_start=False)
+
+>>> Best Parameters:
+
+{'C': 100, 'tol': 1e-10, 'class_weight': 'balanced'}
+
+>>> Test Results:
+
+    	Accuracy: 0.60580	Precision: 0.18701	    Recall: 0.58450	F1: 0.28336	F2: 0.41015
+	Total predictions: 15000	True positives: 1169	False positives: 5082    	False negatives:  831	True negatives: 7918
+
+************************************
+
+>>> Best Estimator:
+
+DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_impurity_split=None,
+            min_samples_leaf=1, min_samples_split=25,
+            min_weight_fraction_leaf=0.0, presort=False, random_state=None,
+            splitter='best')
+
+>>> Best Parameters:
+
+{'min_samples_split': 25, 'criterion': 'entropy'}
+
+>>> Test Results:
+
+    	Accuracy: 0.81787	Precision: 0.15602	    Recall: 0.08300	F1: 0.10836	F2: 0.09157
+	Total predictions: 15000	True positives:  166	False positives:  898    	False negatives: 1834	True negatives: 12102
+
+************************************
+
+************************************
+Testando com K = 11 features
+
+- (0.00) poi
+- (22.51) total_stock_value
+- (22.35) exercised_stock_options
+- (20.79) bonus
+- (18.29) salary
+- (11.42) deferred_income
+- (9.92) long_term_incentive
+- (9.28) total_payments
+- (8.83) restricted_stock
+- (8.59) shared_receipt_with_poi
+- (7.18) loan_advances
+- (5.42) expenses
+************************************
+
+>>> Best Estimator:
+
+GaussianNB(priors=None)
+
+>>> Best Parameters:
+
+{'priors': None}
+
+>>> Test Results:
+
+    	Accuracy: 0.82253	Precision: 0.32616	    Recall: 0.31050	F1: 0.31814	F2: 0.31351
+	Total predictions: 15000	True positives:  621	False positives: 1283    	False negatives: 1379	True negatives: 11717
+
+************************************
+
+>>> Best Estimator:
+
+LogisticRegression(C=0.5, class_weight='balanced', dual=False,
+          fit_intercept=True, intercept_scaling=1, max_iter=100,
+          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
+          solver='liblinear', tol=1e-10, verbose=0, warm_start=False)
+
+>>> Best Parameters:
+
+{'C': 0.5, 'tol': 1e-10, 'class_weight': 'balanced'}
+
+>>> Test Results:
+
+    	Accuracy: 0.60507	Precision: 0.19353	    Recall: 0.61950	F1: 0.29493	F2: 0.43015
+	Total predictions: 15000	True positives: 1239	False positives: 5163    	False negatives:  761	True negatives: 7837
+
+************************************
+
+>>> Best Estimator:
+
+DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_impurity_split=None,
+            min_samples_leaf=1, min_samples_split=25,
+            min_weight_fraction_leaf=0.0, presort=False, random_state=None,
+            splitter='best')
+
+>>> Best Parameters:
+
+{'min_samples_split': 25, 'criterion': 'entropy'}
+
+>>> Test Results:
+
+    	Accuracy: 0.84453	Precision: 0.38904	    Recall: 0.29100	F1: 0.33295	F2: 0.30644
+	Total predictions: 15000	True positives:  582	False positives:  914    	False negatives: 1418	True negatives: 12086
+
+************************************
+
+************************************
+Testando com K = 12 features
+
+- (0.00) poi
+- (22.51) total_stock_value
+- (22.35) exercised_stock_options
+- (20.79) bonus
+- (18.29) salary
+- (11.42) deferred_income
+- (9.92) long_term_incentive
+- (9.28) total_payments
+- (8.83) restricted_stock
+- (8.59) shared_receipt_with_poi
+- (7.18) loan_advances
+- (5.42) expenses
+- (5.24) from_poi_to_this_person
+************************************
+
+>>> Best Estimator:
+
+GaussianNB(priors=None)
+
+>>> Best Parameters:
+
+{'priors': None}
+
+>>> Test Results:
+
+    	Accuracy: 0.82273	Precision: 0.32667	    Recall: 0.31050	F1: 0.31838	F2: 0.31360
+	Total predictions: 15000	True positives:  621	False positives: 1280    	False negatives: 1379	True negatives: 11720
+
+************************************
+
+>>> Best Estimator:
+
+LogisticRegression(C=100, class_weight='balanced', dual=False,
+          fit_intercept=True, intercept_scaling=1, max_iter=100,
+          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
+          solver='liblinear', tol=1e-10, verbose=0, warm_start=False)
+
+>>> Best Parameters:
+
+{'C': 100, 'tol': 1e-10, 'class_weight': 'balanced'}
+
+>>> Test Results:
+
+    	Accuracy: 0.58913	Precision: 0.17410	    Recall: 0.55600	F1: 0.26517	F2: 0.38646
+	Total predictions: 15000	True positives: 1112	False positives: 5275    	False negatives:  888	True negatives: 7725
+
+************************************
+
+>>> Best Estimator:
+
+DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_impurity_split=None,
+            min_samples_leaf=1, min_samples_split=25,
+            min_weight_fraction_leaf=0.0, presort=False, random_state=None,
+            splitter='best')
+
+>>> Best Parameters:
+
+{'min_samples_split': 25, 'criterion': 'entropy'}
+
+>>> Test Results:
+
+    	Accuracy: 0.84487	Precision: 0.39093	    Recall: 0.29300	F1: 0.33495	F2: 0.30845
+	Total predictions: 15000	True positives:  586	False positives:  913    	False negatives: 1414	True negatives: 12087
+
+************************************
+
+************************************
+Testando com K = 13 features
+
+- (0.00) poi
+- (22.51) total_stock_value
+- (22.35) exercised_stock_options
+- (20.79) bonus
+- (18.29) salary
+- (11.42) deferred_income
+- (9.92) long_term_incentive
+- (9.28) total_payments
+- (8.83) restricted_stock
+- (8.59) shared_receipt_with_poi
+- (7.18) loan_advances
+- (5.42) expenses
+- (5.24) from_poi_to_this_person
+- (4.20) other
+************************************
+
+>>> Best Estimator:
+
+GaussianNB(priors=None)
+
+>>> Best Parameters:
+
+{'priors': None}
+
+>>> Test Results:
+
+    	Accuracy: 0.81413	Precision: 0.30591	    Recall: 0.31050	F1: 0.30819	F2: 0.30957
+	Total predictions: 15000	True positives:  621	False positives: 1409    	False negatives: 1379	True negatives: 11591
+
+************************************
+
+>>> Best Estimator:
+
+LogisticRegression(C=1, class_weight='balanced', dual=False,
+          fit_intercept=True, intercept_scaling=1, max_iter=100,
+          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
+          solver='liblinear', tol=1e-10, verbose=0, warm_start=False)
+
+>>> Best Parameters:
+
+{'C': 1, 'tol': 1e-10, 'class_weight': 'balanced'}
+
+>>> Test Results:
+
+    	Accuracy: 0.64347	Precision: 0.18223	    Recall: 0.48000	F1: 0.26417	F2: 0.36177
+	Total predictions: 15000	True positives:  960	False positives: 4308    	False negatives: 1040	True negatives: 8692
+
+************************************
+
+>>> Best Estimator:
+
+DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_impurity_split=None,
+            min_samples_leaf=1, min_samples_split=25,
+            min_weight_fraction_leaf=0.0, presort=False, random_state=None,
+            splitter='best')
+
+>>> Best Parameters:
+
+{'min_samples_split': 25, 'criterion': 'gini'}
+
+>>> Test Results:
+
+    	Accuracy: 0.83267	Precision: 0.23602	    Recall: 0.11400	F1: 0.15374	F2: 0.12715
+	Total predictions: 15000	True positives:  228	False positives:  738    	False negatives: 1772	True negatives: 12262
+
+************************************
+
+************************************
+Testando com K = 14 features
+
+- (0.00) poi
+- (22.51) total_stock_value
+- (22.35) exercised_stock_options
+- (20.79) bonus
+- (18.29) salary
+- (11.42) deferred_income
+- (9.92) long_term_incentive
+- (9.28) total_payments
+- (8.83) restricted_stock
+- (8.59) shared_receipt_with_poi
+- (7.18) loan_advances
+- (5.42) expenses
+- (5.24) from_poi_to_this_person
+- (4.20) other
+- (2.38) from_this_person_to_poi
+************************************
+
+>>> Best Estimator:
+
+GaussianNB(priors=None)
+
+>>> Best Parameters:
+
+{'priors': None}
+
+>>> Test Results:
+
+    	Accuracy: 0.81640	Precision: 0.31112	    Recall: 0.31050	F1: 0.31081	F2: 0.31062
+	Total predictions: 15000	True positives:  621	False positives: 1375    	False negatives: 1379	True negatives: 11625
+
+************************************
+
+>>> Best Estimator:
+
+LogisticRegression(C=100, class_weight='balanced', dual=False,
+          fit_intercept=True, intercept_scaling=1, max_iter=100,
+          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
+          solver='liblinear', tol=1e-10, verbose=0, warm_start=False)
+
+>>> Best Parameters:
+
+{'C': 100, 'tol': 1e-10, 'class_weight': 'balanced'}
+
+>>> Test Results:
+
+    	Accuracy: 0.62207	Precision: 0.15958	    Recall: 0.43000	F1: 0.23278	F2: 0.32116
+	Total predictions: 15000	True positives:  860	False positives: 4529    	False negatives: 1140	True negatives: 8471
+
+************************************
+
+>>> Best Estimator:
+
+DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_impurity_split=None,
+            min_samples_leaf=1, min_samples_split=20,
+            min_weight_fraction_leaf=0.0, presort=False, random_state=None,
+            splitter='best')
+
+>>> Best Parameters:
+
+{'min_samples_split': 20, 'criterion': 'gini'}
+
+>>> Test Results:
+
+    	Accuracy: 0.82387	Precision: 0.24883	    Recall: 0.15900	F1: 0.19402	F2: 0.17137
+	Total predictions: 15000	True positives:  318	False positives:  960    	False negatives: 1682	True negatives: 12040
+
+************************************
+
+************************************
+Testando com K = 15 features
+
+- (0.00) poi
+- (22.51) total_stock_value
+- (22.35) exercised_stock_options
+- (20.79) bonus
+- (18.29) salary
+- (11.42) deferred_income
+- (9.92) long_term_incentive
+- (9.28) total_payments
+- (8.83) restricted_stock
+- (8.59) shared_receipt_with_poi
+- (7.18) loan_advances
+- (5.42) expenses
+- (5.24) from_poi_to_this_person
+- (4.20) other
+- (2.38) from_this_person_to_poi
+- (2.13) director_fees
+************************************
+
+>>> Best Estimator:
+
+GaussianNB(priors=None)
+
+>>> Best Parameters:
+
+{'priors': None}
+
+>>> Test Results:
+
+    	Accuracy: 0.77340	Precision: 0.24006	    Recall: 0.32300	F1: 0.27542	F2: 0.30212
+	Total predictions: 15000	True positives:  646	False positives: 2045    	False negatives: 1354	True negatives: 10955
+
+************************************
+
+>>> Best Estimator:
+
+LogisticRegression(C=1, class_weight='balanced', dual=False,
+          fit_intercept=True, intercept_scaling=1, max_iter=100,
+          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
+          solver='liblinear', tol=1e-10, verbose=0, warm_start=False)
+
+>>> Best Parameters:
+
+{'C': 1, 'tol': 1e-10, 'class_weight': 'balanced'}
+
+>>> Test Results:
+
+    	Accuracy: 0.62200	Precision: 0.15892	    Recall: 0.42750	F1: 0.23171	F2: 0.31951
+	Total predictions: 15000	True positives:  855	False positives: 4525    	False negatives: 1145	True negatives: 8475
+
+************************************
+
+>>> Best Estimator:
+
+DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_impurity_split=None,
+            min_samples_leaf=1, min_samples_split=25,
+            min_weight_fraction_leaf=0.0, presort=False, random_state=None,
+            splitter='best')
+
+>>> Best Parameters:
+
+{'min_samples_split': 25, 'criterion': 'gini'}
+
+>>> Test Results:
+
+    	Accuracy: 0.83287	Precision: 0.23893	    Recall: 0.11600	F1: 0.15618	F2: 0.12931
+	Total predictions: 15000	True positives:  232	False positives:  739    	False negatives: 1768	True negatives: 12261
+
+************************************
+
+************************************
+Testando com K = 16 features
+
+- (0.00) poi
+- (22.51) total_stock_value
+- (22.35) exercised_stock_options
+- (20.79) bonus
+- (18.29) salary
+- (11.42) deferred_income
+- (9.92) long_term_incentive
+- (9.28) total_payments
+- (8.83) restricted_stock
+- (8.59) shared_receipt_with_poi
+- (7.18) loan_advances
+- (5.42) expenses
+- (5.24) from_poi_to_this_person
+- (4.20) other
+- (2.38) from_this_person_to_poi
+- (2.13) director_fees
+- (1.65) to_messages
+************************************
+
+>>> Best Estimator:
+
+GaussianNB(priors=None)
+
+>>> Best Parameters:
+
+{'priors': None}
+
+>>> Test Results:
+
+    	Accuracy: 0.76687	Precision: 0.22431	    Recall: 0.30450	F1: 0.25832	F2: 0.28418
+	Total predictions: 15000	True positives:  609	False positives: 2106    	False negatives: 1391	True negatives: 10894
+
+************************************
+
+>>> Best Estimator:
+
+LogisticRegression(C=0.5, class_weight='balanced', dual=False,
+          fit_intercept=True, intercept_scaling=1, max_iter=100,
+          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
+          solver='liblinear', tol=1e-10, verbose=0, warm_start=False)
+
+>>> Best Parameters:
+
+{'C': 0.5, 'tol': 1e-10, 'class_weight': 'balanced'}
+
+>>> Test Results:
+
+    	Accuracy: 0.68947	Precision: 0.21986	    Recall: 0.52150	F1: 0.30931	F2: 0.40921
+	Total predictions: 15000	True positives: 1043	False positives: 3701    	False negatives:  957	True negatives: 9299
+
+************************************
+
+>>> Best Estimator:
+
+DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_impurity_split=None,
+            min_samples_leaf=1, min_samples_split=25,
+            min_weight_fraction_leaf=0.0, presort=False, random_state=None,
+            splitter='best')
+
+>>> Best Parameters:
+
+{'min_samples_split': 25, 'criterion': 'gini'}
+
+>>> Test Results:
+
+    	Accuracy: 0.83193	Precision: 0.23660	    Recall: 0.11700	F1: 0.15657	F2: 0.13016
+	Total predictions: 15000	True positives:  234	False positives:  755    	False negatives: 1766	True negatives: 12245
+
+************************************
+
+************************************
+Testando com K = 17 features
+
+- (0.00) poi
+- (22.51) total_stock_value
+- (22.35) exercised_stock_options
+- (20.79) bonus
+- (18.29) salary
+- (11.42) deferred_income
+- (9.92) long_term_incentive
+- (9.28) total_payments
+- (8.83) restricted_stock
+- (8.59) shared_receipt_with_poi
+- (7.18) loan_advances
+- (5.42) expenses
+- (5.24) from_poi_to_this_person
+- (4.20) other
+- (2.38) from_this_person_to_poi
+- (2.13) director_fees
+- (1.65) to_messages
+- (0.77) restricted_stock_deferred
+************************************
+
+>>> Best Estimator:
+
+GaussianNB(priors=None)
+
+>>> Best Parameters:
+
+{'priors': None}
+
+>>> Test Results:
+
+    	Accuracy: 0.78820	Precision: 0.30998	    Recall: 0.48000	F1: 0.37669	F2: 0.43255
+	Total predictions: 15000	True positives:  960	False positives: 2137    	False negatives: 1040	True negatives: 10863
+
+************************************
+
+>>> Best Estimator:
+
+LogisticRegression(C=100, class_weight='balanced', dual=False,
+          fit_intercept=True, intercept_scaling=1, max_iter=100,
+          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
+          solver='liblinear', tol=1e-10, verbose=0, warm_start=False)
+
+>>> Best Parameters:
+
+{'C': 100, 'tol': 1e-10, 'class_weight': 'balanced'}
+
+>>> Test Results:
+
+    	Accuracy: 0.69487	Precision: 0.22579	    Recall: 0.53050	F1: 0.31676	F2: 0.41775
+	Total predictions: 15000	True positives: 1061	False positives: 3638    	False negatives:  939	True negatives: 9362
+
+************************************
+
+>>> Best Estimator:
+
+DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_impurity_split=None,
+            min_samples_leaf=1, min_samples_split=25,
+            min_weight_fraction_leaf=0.0, presort=False, random_state=None,
+            splitter='best')
+
+>>> Best Parameters:
+
+{'min_samples_split': 25, 'criterion': 'gini'}
+
+>>> Test Results:
+
+    	Accuracy: 0.83193	Precision: 0.23499	    Recall: 0.11550	F1: 0.15488	F2: 0.12858
+	Total predictions: 15000	True positives:  231	False positives:  752    	False negatives: 1769	True negatives: 12248
+
+************************************
+
+************************************
+Testando com K = 18 features
+
+- (0.00) poi
+- (22.51) total_stock_value
+- (22.35) exercised_stock_options
+- (20.79) bonus
+- (18.29) salary
+- (11.42) deferred_income
+- (9.92) long_term_incentive
+- (9.28) total_payments
+- (8.83) restricted_stock
+- (8.59) shared_receipt_with_poi
+- (7.18) loan_advances
+- (5.42) expenses
+- (5.24) from_poi_to_this_person
+- (4.20) other
+- (2.38) from_this_person_to_poi
+- (2.13) director_fees
+- (1.65) to_messages
+- (0.77) restricted_stock_deferred
+- (0.23) deferral_payments
+************************************
+
+>>> Best Estimator:
+
+GaussianNB(priors=None)
+
+>>> Best Parameters:
+
+{'priors': None}
+
+>>> Test Results:
+
+    	Accuracy: 0.77080	Precision: 0.26999	    Recall: 0.42200	F1: 0.32930	F2: 0.37929
+	Total predictions: 15000	True positives:  844	False positives: 2282    	False negatives: 1156	True negatives: 10718
+
+************************************
+
+>>> Best Estimator:
+
+LogisticRegression(C=1, class_weight='balanced', dual=False,
+          fit_intercept=True, intercept_scaling=1, max_iter=100,
+          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
+          solver='liblinear', tol=1e-10, verbose=0, warm_start=False)
+
+>>> Best Parameters:
+
+{'C': 1, 'tol': 1e-10, 'class_weight': 'balanced'}
+
+>>> Test Results:
+
+    	Accuracy: 0.68813	Precision: 0.22011	    Recall: 0.52650	F1: 0.31044	F2: 0.41184
+	Total predictions: 15000	True positives: 1053	False positives: 3731    	False negatives:  947	True negatives: 9269
+
+************************************
+
+>>> Best Estimator:
+
+DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_impurity_split=None,
+            min_samples_leaf=1, min_samples_split=25,
+            min_weight_fraction_leaf=0.0, presort=False, random_state=None,
+            splitter='best')
+
+>>> Best Parameters:
+
+{'min_samples_split': 25, 'criterion': 'gini'}
+
+>>> Test Results:
+
+    	Accuracy: 0.83213	Precision: 0.23625	    Recall: 0.11600	F1: 0.15560	F2: 0.12915
+	Total predictions: 15000	True positives:  232	False positives:  750    	False negatives: 1768	True negatives: 12250
+
+************************************
+
+************************************
+Testando com K = 19 features
+
+- (0.00) poi
+- (22.51) total_stock_value
+- (22.35) exercised_stock_options
+- (20.79) bonus
+- (18.29) salary
+- (11.42) deferred_income
+- (9.92) long_term_incentive
+- (9.28) total_payments
+- (8.83) restricted_stock
+- (8.59) shared_receipt_with_poi
+- (7.18) loan_advances
+- (5.42) expenses
+- (5.24) from_poi_to_this_person
+- (4.20) other
+- (2.38) from_this_person_to_poi
+- (2.13) director_fees
+- (1.65) to_messages
+- (0.77) restricted_stock_deferred
+- (0.23) deferral_payments
+- (0.17) from_messages
+************************************
+
+>>> Best Estimator:
+
+GaussianNB(priors=None)
+
+>>> Best Parameters:
+
+{'priors': None}
+
+>>> Test Results:
+
+    	Accuracy: 0.76353	Precision: 0.24564	    Recall: 0.37350	F1: 0.29637	F2: 0.33828
+	Total predictions: 15000	True positives:  747	False positives: 2294    	False negatives: 1253	True negatives: 10706
+
+************************************
+
+>>> Best Estimator:
+
+LogisticRegression(C=1000000000000000L, class_weight='balanced', dual=False,
+          fit_intercept=True, intercept_scaling=1, max_iter=100,
+          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
+          solver='liblinear', tol=1e-05, verbose=0, warm_start=False)
+
+>>> Best Parameters:
+
+{'C': 1000000000000000L, 'tol': 1e-05, 'class_weight': 'balanced'}
+
+>>> Test Results:
+
+    	Accuracy: 0.66587	Precision: 0.20354	    Recall: 0.51700	F1: 0.29209	F2: 0.39526
+	Total predictions: 15000	True positives: 1034	False positives: 4046    	False negatives:  966	True negatives: 8954
+
+************************************
+
+>>> Best Estimator:
+
+DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_impurity_split=None,
+            min_samples_leaf=1, min_samples_split=25,
+            min_weight_fraction_leaf=0.0, presort=False, random_state=None,
+            splitter='best')
+
+>>> Best Parameters:
+
+{'min_samples_split': 25, 'criterion': 'gini'}
+
+>>> Test Results:
+
+    	Accuracy: 0.83047	Precision: 0.23145	    Recall: 0.11700	F1: 0.15543	F2: 0.12984
+	Total predictions: 15000	True positives:  234	False positives:  777    	False negatives: 1766	True negatives: 12223
+
+************************************
+

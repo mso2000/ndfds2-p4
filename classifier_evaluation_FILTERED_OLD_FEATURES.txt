@@ -1,0 +1,502 @@
+Min. Threshold: 0.3
+Range: (1, 20)
+
+************************************
+Testando com K = 1 features
+
+- (0.00) poi
+- (22.51) total_stock_value
+************************************
+
+************************************
+Testando com K = 2 features
+
+- (0.00) poi
+- (22.51) total_stock_value
+- (22.35) exercised_stock_options
+************************************
+
+************************************
+Testando com K = 3 features
+
+- (0.00) poi
+- (22.51) total_stock_value
+- (22.35) exercised_stock_options
+- (20.79) bonus
+************************************
+
+>>> Best Estimator:
+
+GaussianNB(priors=None)
+
+>>> Best Parameters:
+
+{'priors': None}
+
+>>> Test Results:
+
+    	Accuracy: 0.84477	Precision: 0.49340	    Recall: 0.33650	F1: 0.40012	F2: 0.35935
+	Total predictions: 13000	True positives:  673	False positives:  691    	False negatives: 1327	True negatives: 10309
+
+************************************
+
+************************************
+Testando com K = 4 features
+
+- (0.00) poi
+- (22.51) total_stock_value
+- (22.35) exercised_stock_options
+- (20.79) bonus
+- (18.29) salary
+************************************
+
+>>> Best Estimator:
+
+GaussianNB(priors=None)
+
+>>> Best Parameters:
+
+{'priors': None}
+
+>>> Test Results:
+
+    	Accuracy: 0.83915	Precision: 0.46597	    Recall: 0.31150	F1: 0.37339	F2: 0.33362
+	Total predictions: 13000	True positives:  623	False positives:  714    	False negatives: 1377	True negatives: 10286
+
+************************************
+
+************************************
+Testando com K = 5 features
+
+- (0.00) poi
+- (22.51) total_stock_value
+- (22.35) exercised_stock_options
+- (20.79) bonus
+- (18.29) salary
+- (11.42) deferred_income
+************************************
+
+>>> Best Estimator:
+
+GaussianNB(priors=None)
+
+>>> Best Parameters:
+
+{'priors': None}
+
+>>> Test Results:
+
+    	Accuracy: 0.84700	Precision: 0.45408	    Recall: 0.35100	F1: 0.39594	F2: 0.36769
+	Total predictions: 14000	True positives:  702	False positives:  844    	False negatives: 1298	True negatives: 11156
+
+************************************
+
+************************************
+Testando com K = 6 features
+
+- (0.00) poi
+- (22.51) total_stock_value
+- (22.35) exercised_stock_options
+- (20.79) bonus
+- (18.29) salary
+- (11.42) deferred_income
+- (9.92) long_term_incentive
+************************************
+
+>>> Best Estimator:
+
+GaussianNB(priors=None)
+
+>>> Best Parameters:
+
+{'priors': None}
+
+>>> Test Results:
+
+    	Accuracy: 0.84179	Precision: 0.43497	    Recall: 0.35950	F1: 0.39365	F2: 0.37242
+	Total predictions: 14000	True positives:  719	False positives:  934    	False negatives: 1281	True negatives: 11066
+
+************************************
+
+************************************
+Testando com K = 7 features
+
+- (0.00) poi
+- (22.51) total_stock_value
+- (22.35) exercised_stock_options
+- (20.79) bonus
+- (18.29) salary
+- (11.42) deferred_income
+- (9.92) long_term_incentive
+- (9.28) total_payments
+************************************
+
+>>> Best Estimator:
+
+GaussianNB(priors=None)
+
+>>> Best Parameters:
+
+{'priors': None}
+
+>>> Test Results:
+
+    	Accuracy: 0.85047	Precision: 0.42486	    Recall: 0.34350	F1: 0.37987	F2: 0.35718
+	Total predictions: 15000	True positives:  687	False positives:  930    	False negatives: 1313	True negatives: 12070
+
+************************************
+
+************************************
+Testando com K = 8 features
+
+- (0.00) poi
+- (22.51) total_stock_value
+- (22.35) exercised_stock_options
+- (20.79) bonus
+- (18.29) salary
+- (11.42) deferred_income
+- (9.92) long_term_incentive
+- (9.28) total_payments
+- (8.83) restricted_stock
+************************************
+
+>>> Best Estimator:
+
+GaussianNB(priors=None)
+
+>>> Best Parameters:
+
+{'priors': None}
+
+>>> Test Results:
+
+    	Accuracy: 0.84700	Precision: 0.41088	    Recall: 0.34000	F1: 0.37209	F2: 0.35215
+	Total predictions: 15000	True positives:  680	False positives:  975    	False negatives: 1320	True negatives: 12025
+
+************************************
+
+************************************
+Testando com K = 9 features
+
+- (0.00) poi
+- (22.51) total_stock_value
+- (22.35) exercised_stock_options
+- (20.79) bonus
+- (18.29) salary
+- (11.42) deferred_income
+- (9.92) long_term_incentive
+- (9.28) total_payments
+- (8.83) restricted_stock
+- (8.59) shared_receipt_with_poi
+************************************
+
+>>> Best Estimator:
+
+GaussianNB(priors=None)
+
+>>> Best Parameters:
+
+{'priors': None}
+
+>>> Test Results:
+
+    	Accuracy: 0.84093	Precision: 0.38882	    Recall: 0.33750	F1: 0.36135	F2: 0.34665
+	Total predictions: 15000	True positives:  675	False positives: 1061    	False negatives: 1325	True negatives: 11939
+
+************************************
+
+************************************
+Testando com K = 10 features
+
+- (0.00) poi
+- (22.51) total_stock_value
+- (22.35) exercised_stock_options
+- (20.79) bonus
+- (18.29) salary
+- (11.42) deferred_income
+- (9.92) long_term_incentive
+- (9.28) total_payments
+- (8.83) restricted_stock
+- (8.59) shared_receipt_with_poi
+- (7.18) loan_advances
+************************************
+
+>>> Best Estimator:
+
+GaussianNB(priors=None)
+
+>>> Best Parameters:
+
+{'priors': None}
+
+>>> Test Results:
+
+    	Accuracy: 0.82227	Precision: 0.32584	    Recall: 0.31150	F1: 0.31851	F2: 0.31427
+	Total predictions: 15000	True positives:  623	False positives: 1289    	False negatives: 1377	True negatives: 11711
+
+************************************
+
+************************************
+Testando com K = 11 features
+
+- (0.00) poi
+- (22.51) total_stock_value
+- (22.35) exercised_stock_options
+- (20.79) bonus
+- (18.29) salary
+- (11.42) deferred_income
+- (9.92) long_term_incentive
+- (9.28) total_payments
+- (8.83) restricted_stock
+- (8.59) shared_receipt_with_poi
+- (7.18) loan_advances
+- (5.42) expenses
+************************************
+
+>>> Best Estimator:
+
+GaussianNB(priors=None)
+
+>>> Best Parameters:
+
+{'priors': None}
+
+>>> Test Results:
+
+    	Accuracy: 0.82253	Precision: 0.32616	    Recall: 0.31050	F1: 0.31814	F2: 0.31351
+	Total predictions: 15000	True positives:  621	False positives: 1283    	False negatives: 1379	True negatives: 11717
+
+************************************
+
+************************************
+Testando com K = 12 features
+
+- (0.00) poi
+- (22.51) total_stock_value
+- (22.35) exercised_stock_options
+- (20.79) bonus
+- (18.29) salary
+- (11.42) deferred_income
+- (9.92) long_term_incentive
+- (9.28) total_payments
+- (8.83) restricted_stock
+- (8.59) shared_receipt_with_poi
+- (7.18) loan_advances
+- (5.42) expenses
+- (5.24) from_poi_to_this_person
+************************************
+
+>>> Best Estimator:
+
+GaussianNB(priors=None)
+
+>>> Best Parameters:
+
+{'priors': None}
+
+>>> Test Results:
+
+    	Accuracy: 0.82273	Precision: 0.32667	    Recall: 0.31050	F1: 0.31838	F2: 0.31360
+	Total predictions: 15000	True positives:  621	False positives: 1280    	False negatives: 1379	True negatives: 11720
+
+************************************
+
+************************************
+Testando com K = 13 features
+
+- (0.00) poi
+- (22.51) total_stock_value
+- (22.35) exercised_stock_options
+- (20.79) bonus
+- (18.29) salary
+- (11.42) deferred_income
+- (9.92) long_term_incentive
+- (9.28) total_payments
+- (8.83) restricted_stock
+- (8.59) shared_receipt_with_poi
+- (7.18) loan_advances
+- (5.42) expenses
+- (5.24) from_poi_to_this_person
+- (4.20) other
+************************************
+
+>>> Best Estimator:
+
+GaussianNB(priors=None)
+
+>>> Best Parameters:
+
+{'priors': None}
+
+>>> Test Results:
+
+    	Accuracy: 0.81413	Precision: 0.30591	    Recall: 0.31050	F1: 0.30819	F2: 0.30957
+	Total predictions: 15000	True positives:  621	False positives: 1409    	False negatives: 1379	True negatives: 11591
+
+************************************
+
+************************************
+Testando com K = 14 features
+
+- (0.00) poi
+- (22.51) total_stock_value
+- (22.35) exercised_stock_options
+- (20.79) bonus
+- (18.29) salary
+- (11.42) deferred_income
+- (9.92) long_term_incentive
+- (9.28) total_payments
+- (8.83) restricted_stock
+- (8.59) shared_receipt_with_poi
+- (7.18) loan_advances
+- (5.42) expenses
+- (5.24) from_poi_to_this_person
+- (4.20) other
+- (2.38) from_this_person_to_poi
+************************************
+
+>>> Best Estimator:
+
+GaussianNB(priors=None)
+
+>>> Best Parameters:
+
+{'priors': None}
+
+>>> Test Results:
+
+    	Accuracy: 0.81640	Precision: 0.31112	    Recall: 0.31050	F1: 0.31081	F2: 0.31062
+	Total predictions: 15000	True positives:  621	False positives: 1375    	False negatives: 1379	True negatives: 11625
+
+************************************
+
+************************************
+Testando com K = 15 features
+
+- (0.00) poi
+- (22.51) total_stock_value
+- (22.35) exercised_stock_options
+- (20.79) bonus
+- (18.29) salary
+- (11.42) deferred_income
+- (9.92) long_term_incentive
+- (9.28) total_payments
+- (8.83) restricted_stock
+- (8.59) shared_receipt_with_poi
+- (7.18) loan_advances
+- (5.42) expenses
+- (5.24) from_poi_to_this_person
+- (4.20) other
+- (2.38) from_this_person_to_poi
+- (2.13) director_fees
+************************************
+
+************************************
+Testando com K = 16 features
+
+- (0.00) poi
+- (22.51) total_stock_value
+- (22.35) exercised_stock_options
+- (20.79) bonus
+- (18.29) salary
+- (11.42) deferred_income
+- (9.92) long_term_incentive
+- (9.28) total_payments
+- (8.83) restricted_stock
+- (8.59) shared_receipt_with_poi
+- (7.18) loan_advances
+- (5.42) expenses
+- (5.24) from_poi_to_this_person
+- (4.20) other
+- (2.38) from_this_person_to_poi
+- (2.13) director_fees
+- (1.65) to_messages
+************************************
+
+************************************
+Testando com K = 17 features
+
+- (0.00) poi
+- (22.51) total_stock_value
+- (22.35) exercised_stock_options
+- (20.79) bonus
+- (18.29) salary
+- (11.42) deferred_income
+- (9.92) long_term_incentive
+- (9.28) total_payments
+- (8.83) restricted_stock
+- (8.59) shared_receipt_with_poi
+- (7.18) loan_advances
+- (5.42) expenses
+- (5.24) from_poi_to_this_person
+- (4.20) other
+- (2.38) from_this_person_to_poi
+- (2.13) director_fees
+- (1.65) to_messages
+- (0.77) restricted_stock_deferred
+************************************
+
+>>> Best Estimator:
+
+GaussianNB(priors=None)
+
+>>> Best Parameters:
+
+{'priors': None}
+
+>>> Test Results:
+
+    	Accuracy: 0.78820	Precision: 0.30998	    Recall: 0.48000	F1: 0.37669	F2: 0.43255
+	Total predictions: 15000	True positives:  960	False positives: 2137    	False negatives: 1040	True negatives: 10863
+
+************************************
+
+************************************
+Testando com K = 18 features
+
+- (0.00) poi
+- (22.51) total_stock_value
+- (22.35) exercised_stock_options
+- (20.79) bonus
+- (18.29) salary
+- (11.42) deferred_income
+- (9.92) long_term_incentive
+- (9.28) total_payments
+- (8.83) restricted_stock
+- (8.59) shared_receipt_with_poi
+- (7.18) loan_advances
+- (5.42) expenses
+- (5.24) from_poi_to_this_person
+- (4.20) other
+- (2.38) from_this_person_to_poi
+- (2.13) director_fees
+- (1.65) to_messages
+- (0.77) restricted_stock_deferred
+- (0.23) deferral_payments
+************************************
+
+************************************
+Testando com K = 19 features
+
+- (0.00) poi
+- (22.51) total_stock_value
+- (22.35) exercised_stock_options
+- (20.79) bonus
+- (18.29) salary
+- (11.42) deferred_income
+- (9.92) long_term_incentive
+- (9.28) total_payments
+- (8.83) restricted_stock
+- (8.59) shared_receipt_with_poi
+- (7.18) loan_advances
+- (5.42) expenses
+- (5.24) from_poi_to_this_person
+- (4.20) other
+- (2.38) from_this_person_to_poi
+- (2.13) director_fees
+- (1.65) to_messages
+- (0.77) restricted_stock_deferred
+- (0.23) deferral_payments
+- (0.17) from_messages
+************************************
+
