@@ -270,7 +270,7 @@ GaussianNB(priors=None)
 
 >>> Best Estimator:
 
-DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
+DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
             max_features=None, max_leaf_nodes=None,
             min_impurity_decrease=0.0, min_impurity_split=None,
             min_samples_leaf=1, min_samples_split=15,
@@ -279,12 +279,12 @@ DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
 
 >>> Best Parameters:
 
-{'min_samples_split': 15, 'criterion': 'entropy'}
+{'min_samples_split': 15, 'criterion': 'gini'}
 
 >>> Test Results:
 
-    	Accuracy: 0.92993	Precision: 0.78810	    Recall: 0.64900	F1: 0.71182	F2: 0.67275
-	Total predictions: 15000	True positives: 1298	False positives:  349    	False negatives:  702	True negatives: 12651
+    	Accuracy: 0.90087	Precision: 0.68902	    Recall: 0.46750	F1: 0.55704	F2: 0.49963
+	Total predictions: 15000	True positives:  935	False positives:  422    	False negatives: 1065	True negatives: 12578
 
 ************************************
 
@@ -321,26 +321,6 @@ GaussianNB(priors=None)
 
 ************************************
 
->>> Best Estimator:
-
-DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
-            max_features=None, max_leaf_nodes=None,
-            min_impurity_decrease=0.0, min_impurity_split=None,
-            min_samples_leaf=1, min_samples_split=20,
-            min_weight_fraction_leaf=0.0, presort=False, random_state=None,
-            splitter='best')
-
->>> Best Parameters:
-
-{'min_samples_split': 20, 'criterion': 'entropy'}
-
->>> Test Results:
-
-    	Accuracy: 0.91987	Precision: 0.73554	    Recall: 0.62300	F1: 0.67461	F2: 0.64267
-	Total predictions: 15000	True positives: 1246	False positives:  448    	False negatives:  754	True negatives: 12552
-
-************************************
-
 ************************************
 Testando com K = 13 features
 
@@ -372,6 +352,26 @@ GaussianNB(priors=None)
 
     	Accuracy: 0.82273	Precision: 0.32667	    Recall: 0.31050	F1: 0.31838	F2: 0.31360
 	Total predictions: 15000	True positives:  621	False positives: 1280    	False negatives: 1379	True negatives: 11720
+
+************************************
+
+>>> Best Estimator:
+
+DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_impurity_split=None,
+            min_samples_leaf=1, min_samples_split=15,
+            min_weight_fraction_leaf=0.0, presort=False, random_state=None,
+            splitter='best')
+
+>>> Best Parameters:
+
+{'min_samples_split': 15, 'criterion': 'entropy'}
+
+>>> Test Results:
+
+    	Accuracy: 0.94020	Precision: 0.87852	    Recall: 0.64000	F1: 0.74053	F2: 0.67675
+	Total predictions: 15000	True positives: 1280	False positives:  177    	False negatives:  720	True negatives: 12823
 
 ************************************
 
@@ -412,7 +412,7 @@ GaussianNB(priors=None)
 
 >>> Best Estimator:
 
-DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
             max_features=None, max_leaf_nodes=None,
             min_impurity_decrease=0.0, min_impurity_split=None,
             min_samples_leaf=1, min_samples_split=15,
@@ -421,12 +421,12 @@ DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
 
 >>> Best Parameters:
 
-{'min_samples_split': 15, 'criterion': 'gini'}
+{'min_samples_split': 15, 'criterion': 'entropy'}
 
 >>> Test Results:
 
-    	Accuracy: 0.89540	Precision: 0.65741	    Recall: 0.45000	F1: 0.53428	F2: 0.48031
-	Total predictions: 15000	True positives:  900	False positives:  469    	False negatives: 1100	True negatives: 12531
+    	Accuracy: 0.94033	Precision: 0.87817	    Recall: 0.64150	F1: 0.74140	F2: 0.67805
+	Total predictions: 15000	True positives: 1283	False positives:  178    	False negatives:  717	True negatives: 12822
 
 ************************************
 
@@ -481,8 +481,8 @@ DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
 
 >>> Test Results:
 
-    	Accuracy: 0.92367	Precision: 0.78070	    Recall: 0.59450	F1: 0.67499	F2: 0.62428
-	Total predictions: 15000	True positives: 1189	False positives:  334    	False negatives:  811	True negatives: 12666
+    	Accuracy: 0.92427	Precision: 0.78496	    Recall: 0.59500	F1: 0.67691	F2: 0.62526
+	Total predictions: 15000	True positives: 1190	False positives:  326    	False negatives:  810	True negatives: 12674
 
 ************************************
 
@@ -538,8 +538,8 @@ DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
 
 >>> Test Results:
 
-    	Accuracy: 0.92107	Precision: 0.76459	    Recall: 0.58950	F1: 0.66573	F2: 0.61780
-	Total predictions: 15000	True positives: 1179	False positives:  363    	False negatives:  821	True negatives: 12637
+    	Accuracy: 0.92333	Precision: 0.77526	    Recall: 0.59850	F1: 0.67551	F2: 0.62710
+	Total predictions: 15000	True positives: 1197	False positives:  347    	False negatives:  803	True negatives: 12653
 
 ************************************
 
@@ -581,8 +581,8 @@ DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
 
 >>> Test Results:
 
-    	Accuracy: 0.92167	Precision: 0.76803	    Recall: 0.59100	F1: 0.66799	F2: 0.61956
-	Total predictions: 15000	True positives: 1182	False positives:  357    	False negatives:  818	True negatives: 12643
+    	Accuracy: 0.92193	Precision: 0.77252	    Recall: 0.58750	F1: 0.66742	F2: 0.61706
+	Total predictions: 15000	True positives: 1175	False positives:  346    	False negatives:  825	True negatives: 12654
 
 ************************************
 
@@ -625,8 +625,8 @@ DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
 
 >>> Test Results:
 
-    	Accuracy: 0.92067	Precision: 0.76062	    Recall: 0.59100	F1: 0.66517	F2: 0.61859
-	Total predictions: 15000	True positives: 1182	False positives:  372    	False negatives:  818	True negatives: 12628
+    	Accuracy: 0.92073	Precision: 0.76246	    Recall: 0.58900	F1: 0.66460	F2: 0.61708
+	Total predictions: 15000	True positives: 1178	False positives:  367    	False negatives:  822	True negatives: 12633
 
 ************************************
 
@@ -685,8 +685,8 @@ DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
 
 >>> Test Results:
 
-    	Accuracy: 0.91953	Precision: 0.75466	    Recall: 0.58750	F1: 0.66067	F2: 0.61473
-	Total predictions: 15000	True positives: 1175	False positives:  382    	False negatives:  825	True negatives: 12618
+    	Accuracy: 0.92087	Precision: 0.76108	    Recall: 0.59250	F1: 0.66629	F2: 0.61996
+	Total predictions: 15000	True positives: 1185	False positives:  372    	False negatives:  815	True negatives: 12628
 
 ************************************
 
@@ -731,8 +731,8 @@ DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
 
 >>> Test Results:
 
-    	Accuracy: 0.91947	Precision: 0.75352	    Recall: 0.58850	F1: 0.66086	F2: 0.61546
-	Total predictions: 15000	True positives: 1177	False positives:  385    	False negatives:  823	True negatives: 12615
+    	Accuracy: 0.92040	Precision: 0.76305	    Recall: 0.58450	F1: 0.66195	F2: 0.61320
+	Total predictions: 15000	True positives: 1169	False positives:  363    	False negatives:  831	True negatives: 12637
 
 ************************************
 
@@ -778,8 +778,8 @@ DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
 
 >>> Test Results:
 
-    	Accuracy: 0.91953	Precision: 0.75143	    Recall: 0.59250	F1: 0.66257	F2: 0.61867
-	Total predictions: 15000	True positives: 1185	False positives:  392    	False negatives:  815	True negatives: 12608
+    	Accuracy: 0.92033	Precision: 0.76052	    Recall: 0.58750	F1: 0.66291	F2: 0.61551
+	Total predictions: 15000	True positives: 1175	False positives:  370    	False negatives:  825	True negatives: 12630
 
 ************************************
 

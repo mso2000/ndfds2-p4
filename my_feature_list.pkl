@@ -23,4 +23,10 @@ aS'loan_advances'
 p11
 aS'fraction_from_poi_email'
 p12
+aS'expenses'
+p13
+aS'from_poi_to_this_person'
+p14
+aS'fraction_to_poi_email'
+p15
 a.

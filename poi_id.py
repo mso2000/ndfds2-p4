@@ -200,7 +200,10 @@ def my_test_classifier(clf, dataset, feature_list, folds = 1000):
                    PERF_FORMAT_STRING.format(accuracy, precision, recall, f1, f2, display_precision = 5),
                    RESULTS_FORMAT_STRING.format(total_predictions, true_positives, false_positives, false_negatives, true_negatives),
                    precision, 
-                   recall)
+                   recall, 
+                   accuracy, 
+                   f1, 
+                   f2)
     except:
         results = (clf, "Got a divide by zero when trying out:", "Precision or recall may be undefined due to a lack of true positive predicitons.", 0, 0)
     
@@ -245,12 +248,6 @@ def EvaluateClassifiers(dataset, features_list):
     
     classifiers = [{"classifier": GaussianNB(), 
                     "params": {"priors": [None]}}, 
-                   {"classifier": LogisticRegression(),
-                    "params": {
-                        "C": [0.05, 0.5, 1, 10, 10**2, 10**3, 10**5, 10**10, 10**15],
-                        "tol":[10**-1, 10**-2, 10**-4, 10**-5, 10**-6, 10**-10, 10**-15],
-                        "class_weight":["balanced"]
-                    }},
                    {"classifier": DecisionTreeClassifier(),
                     "params": {
                         "criterion": ["gini", "entropy"],
@@ -269,14 +266,15 @@ def EvaluateClassifiers(dataset, features_list):
     return results
 
 
-### Esse método gera um relatório em txt para um range de diversas quantidades de features 
-### selecionadas com o K-Best e para cada quantidade são testados os algoritmos para obter 
-### os melhores parâmetros.
+### Esse método gera um relatório em txt (e um dump dos dados em CSV) para um range de diversas 
+### quantidades de features selecionadas com o K-Best e para cada quantidade são testados os 
+### algoritmos para obter os melhores parâmetros.
 ###
 ### É possível definir um threshold mínimo para que o relatório só grave os testes com as
 ### métricas de precision e recall acima desse threshold
 def DoEvaluation(dataset, features_list, min_threshold, min_range, max_range):
     evaluation_file = "classifier_evaluation.txt"
+    dump_file = "classifier_evaluation.csv"
     data = featureFormat(dataset, features_list, sort_keys = True)
     labels, features = targetFeatureSplit(data)
     print "Processando a avaliação dos classificadores (pode demorar alguns minutos)...\n\n"
@@ -285,6 +283,7 @@ def DoEvaluation(dataset, features_list, min_threshold, min_range, max_range):
         with open(evaluation_file, "w") as file:
             file.write("Min. Threshold: {}\n".format(min_threshold))
             file.write("Range: ({}, {})\n\n".format(min_range, max_range))
+            results_dict = []
             for num_features in range(min_range, max_range):
                 test_features, scores = SelectFeatures(features_list, labels, features, num_features)
                 file.write("************************************\n")
@@ -297,12 +296,24 @@ def DoEvaluation(dataset, features_list, min_threshold, min_range, max_range):
             
                 for r in results:
                     if r[2][3] >= min_threshold and r[2][4] >= min_threshold:
+                        dict = {}             
+                        dict["num_features"] = num_features
+                        dict["classifier"] = str(r[0])[:str(r[0]).find("(")]
+                        dict["precision"] = r[2][3]
+                        dict["recall"] = r[2][4]
+                        dict["accuracy"] = r[2][5]
+                        dict["f1"] = r[2][6]
+                        dict["f2"] = r[2][7]
+                        results_dict.append(dict)
                         file.write(">>> Best Estimator:\n\n{}\n\n".format(r[0]))
                         file.write(">>> Best Parameters:\n\n{}\n\n".format(r[1]))
                         file.write(">>> Test Results:\n\n{}\n{}\n\n".format(r[2][1], r[2][2]))
                         file.write("************************************\n\n")
             
-            print "Arquivo '{}' gravado com sucesso!".format(evaluation_file)
+            df = pd.DataFrame(results_dict, columns = results_dict[0].keys())
+            df.to_csv(dump_file, index=False)
+
+            print "Arquivos '{}' e '{}' gravados com sucesso!".format(evaluation_file, dump_file)
     except IOError as err:
         print "\nErro de I/O: {}".format(err)
 
@@ -351,7 +362,7 @@ def DumpBestClassifier(dataset, features_list):
     data = featureFormat(dataset, features_list, sort_keys = True)
     labels, features = targetFeatureSplit(data)
 
-    final_features,_ = SelectFeatures(features_list, labels, features, 11)
+    final_features,_ = SelectFeatures(features_list, labels, features, 14)
 
     data = featureFormat(dataset, final_features, sort_keys = True)
     labels, features = targetFeatureSplit(data)
@@ -440,7 +451,7 @@ def main():
         
     ### 8) Fazendo o dump com os resultados do melhor classificador encontrado
     str_result = ("Fazendo o dump com os resultados do melhor classificador encontrado...\n\n" + 
-                  "Resultados com 11 features")
+                  "Resultados com 14 features")
     if len(features_list) == 22:
         str_result = str_result + " (usando uma das features novas):\n\n"
     else:

@@ -25,24 +25,6 @@ GaussianNB(priors=None)
 
 >>> Best Estimator:
 
-LogisticRegression(C=0.05, class_weight='balanced', dual=False,
-          fit_intercept=True, intercept_scaling=1, max_iter=100,
-          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
-          solver='liblinear', tol=0.1, verbose=0, warm_start=False)
-
->>> Best Parameters:
-
-{'C': 0.05, 'tol': 0.1, 'class_weight': 'balanced'}
-
->>> Test Results:
-
-    	Accuracy: 0.15385	Precision: 0.15385	    Recall: 1.00000	F1: 0.26667	F2: 0.47619
-	Total predictions: 13000	True positives: 2000	False positives: 11000    	False negatives:    0	True negatives:    0
-
-************************************
-
->>> Best Estimator:
-
 DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
             max_features=None, max_leaf_nodes=None,
             min_impurity_decrease=0.0, min_impurity_split=None,
@@ -86,24 +68,6 @@ GaussianNB(priors=None)
 
 >>> Best Estimator:
 
-LogisticRegression(C=0.05, class_weight='balanced', dual=False,
-          fit_intercept=True, intercept_scaling=1, max_iter=100,
-          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
-          solver='liblinear', tol=1e-10, verbose=0, warm_start=False)
-
->>> Best Parameters:
-
-{'C': 0.05, 'tol': 1e-10, 'class_weight': 'balanced'}
-
->>> Test Results:
-
-    	Accuracy: 0.44223	Precision: 0.16327	    Recall: 0.63650	F1: 0.25988	F2: 0.40292
-	Total predictions: 13000	True positives: 1273	False positives: 6524    	False negatives:  727	True negatives: 4476
-
-************************************
-
->>> Best Estimator:
-
 DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
             max_features=None, max_leaf_nodes=None,
             min_impurity_decrease=0.0, min_impurity_split=None,
@@ -117,8 +81,8 @@ DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
 
 >>> Test Results:
 
-    	Accuracy: 0.82992	Precision: 0.40721	    Recall: 0.23150	F1: 0.29519	F2: 0.25337
-	Total predictions: 13000	True positives:  463	False positives:  674    	False negatives: 1537	True negatives: 10326
+    	Accuracy: 0.83092	Precision: 0.41192	    Recall: 0.23150	F1: 0.29641	F2: 0.25373
+	Total predictions: 13000	True positives:  463	False positives:  661    	False negatives: 1537	True negatives: 10339
 
 ************************************
 
@@ -148,24 +112,6 @@ GaussianNB(priors=None)
 
 >>> Best Estimator:
 
-LogisticRegression(C=100, class_weight='balanced', dual=False,
-          fit_intercept=True, intercept_scaling=1, max_iter=100,
-          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
-          solver='liblinear', tol=1e-10, verbose=0, warm_start=False)
-
->>> Best Parameters:
-
-{'C': 100, 'tol': 1e-10, 'class_weight': 'balanced'}
-
->>> Test Results:
-
-    	Accuracy: 0.57969	Precision: 0.20413	    Recall: 0.59750	F1: 0.30430	F2: 0.43128
-	Total predictions: 13000	True positives: 1195	False positives: 4659    	False negatives:  805	True negatives: 6341
-
-************************************
-
->>> Best Estimator:
-
 DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
             max_features=None, max_leaf_nodes=None,
             min_impurity_decrease=0.0, min_impurity_split=None,
@@ -179,8 +125,8 @@ DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
 
 >>> Test Results:
 
-    	Accuracy: 0.81823	Precision: 0.33838	    Recall: 0.19000	F1: 0.24336	F2: 0.20826
-	Total predictions: 13000	True positives:  380	False positives:  743    	False negatives: 1620	True negatives: 10257
+    	Accuracy: 0.81692	Precision: 0.33066	    Recall: 0.18550	F1: 0.23767	F2: 0.20335
+	Total predictions: 13000	True positives:  371	False positives:  751    	False negatives: 1629	True negatives: 10249
 
 ************************************
 
@@ -211,24 +157,6 @@ GaussianNB(priors=None)
 
 >>> Best Estimator:
 
-LogisticRegression(C=10000000000L, class_weight='balanced', dual=False,
-          fit_intercept=True, intercept_scaling=1, max_iter=100,
-          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
-          solver='liblinear', tol=1e-10, verbose=0, warm_start=False)
-
->>> Best Parameters:
-
-{'C': 10000000000L, 'tol': 1e-10, 'class_weight': 'balanced'}
-
->>> Test Results:
-
-    	Accuracy: 0.66362	Precision: 0.22793	    Recall: 0.49700	F1: 0.31253	F2: 0.40207
-	Total predictions: 13000	True positives:  994	False positives: 3367    	False negatives: 1006	True negatives: 7633
-
-************************************
-
->>> Best Estimator:
-
 DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
             max_features=None, max_leaf_nodes=None,
             min_impurity_decrease=0.0, min_impurity_split=None,
@@ -242,8 +170,8 @@ DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
 
 >>> Test Results:
 
-    	Accuracy: 0.81208	Precision: 0.33001	    Recall: 0.21500	F1: 0.26037	F2: 0.23111
-	Total predictions: 13000	True positives:  430	False positives:  873    	False negatives: 1570	True negatives: 10127
+    	Accuracy: 0.81146	Precision: 0.32773	    Recall: 0.21450	F1: 0.25929	F2: 0.23042
+	Total predictions: 13000	True positives:  429	False positives:  880    	False negatives: 1571	True negatives: 10120
 
 ************************************
 
@@ -275,39 +203,21 @@ GaussianNB(priors=None)
 
 >>> Best Estimator:
 
-LogisticRegression(C=10, class_weight='balanced', dual=False,
-          fit_intercept=True, intercept_scaling=1, max_iter=100,
-          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
-          solver='liblinear', tol=1e-10, verbose=0, warm_start=False)
-
->>> Best Parameters:
-
-{'C': 10, 'tol': 1e-10, 'class_weight': 'balanced'}
-
->>> Test Results:
-
-    	Accuracy: 0.65157	Precision: 0.20929	    Recall: 0.51800	F1: 0.29813	F2: 0.40000
-	Total predictions: 14000	True positives: 1036	False positives: 3914    	False negatives:  964	True negatives: 8086
-
-************************************
-
->>> Best Estimator:
-
 DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
             max_features=None, max_leaf_nodes=None,
             min_impurity_decrease=0.0, min_impurity_split=None,
-            min_samples_leaf=1, min_samples_split=10,
+            min_samples_leaf=1, min_samples_split=20,
             min_weight_fraction_leaf=0.0, presort=False, random_state=None,
             splitter='best')
 
 >>> Best Parameters:
 
-{'min_samples_split': 10, 'criterion': 'gini'}
+{'min_samples_split': 20, 'criterion': 'gini'}
 
 >>> Test Results:
 
-    	Accuracy: 0.81936	Precision: 0.33622	    Recall: 0.27150	F1: 0.30041	F2: 0.28237
-	Total predictions: 14000	True positives:  543	False positives: 1072    	False negatives: 1457	True negatives: 10928
+    	Accuracy: 0.81721	Precision: 0.25926	    Recall: 0.15050	F1: 0.19045	F2: 0.16428
+	Total predictions: 14000	True positives:  301	False positives:  860    	False negatives: 1699	True negatives: 11140
 
 ************************************
 
@@ -340,25 +250,7 @@ GaussianNB(priors=None)
 
 >>> Best Estimator:
 
-LogisticRegression(C=1, class_weight='balanced', dual=False,
-          fit_intercept=True, intercept_scaling=1, max_iter=100,
-          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
-          solver='liblinear', tol=1e-10, verbose=0, warm_start=False)
-
->>> Best Parameters:
-
-{'C': 1, 'tol': 1e-10, 'class_weight': 'balanced'}
-
->>> Test Results:
-
-    	Accuracy: 0.63857	Precision: 0.19727	    Recall: 0.49850	F1: 0.28268	F2: 0.38188
-	Total predictions: 14000	True positives:  997	False positives: 4057    	False negatives: 1003	True negatives: 7943
-
-************************************
-
->>> Best Estimator:
-
-DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
             max_features=None, max_leaf_nodes=None,
             min_impurity_decrease=0.0, min_impurity_split=None,
             min_samples_leaf=1, min_samples_split=20,
@@ -367,12 +259,12 @@ DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
 
 >>> Best Parameters:
 
-{'min_samples_split': 20, 'criterion': 'gini'}
+{'min_samples_split': 20, 'criterion': 'entropy'}
 
 >>> Test Results:
 
-    	Accuracy: 0.81736	Precision: 0.25887	    Recall: 0.14950	F1: 0.18954	F2: 0.16330
-	Total predictions: 14000	True positives:  299	False positives:  856    	False negatives: 1701	True negatives: 11144
+    	Accuracy: 0.80707	Precision: 0.19335	    Recall: 0.11050	F1: 0.14063	F2: 0.12086
+	Total predictions: 14000	True positives:  221	False positives:  922    	False negatives: 1779	True negatives: 11078
 
 ************************************
 
@@ -406,24 +298,6 @@ GaussianNB(priors=None)
 
 >>> Best Estimator:
 
-LogisticRegression(C=1, class_weight='balanced', dual=False,
-          fit_intercept=True, intercept_scaling=1, max_iter=100,
-          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
-          solver='liblinear', tol=1e-10, verbose=0, warm_start=False)
-
->>> Best Parameters:
-
-{'C': 1, 'tol': 1e-10, 'class_weight': 'balanced'}
-
->>> Test Results:
-
-    	Accuracy: 0.65967	Precision: 0.19129	    Recall: 0.48100	F1: 0.27372	F2: 0.36918
-	Total predictions: 15000	True positives:  962	False positives: 4067    	False negatives: 1038	True negatives: 8933
-
-************************************
-
->>> Best Estimator:
-
 DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
             max_features=None, max_leaf_nodes=None,
             min_impurity_decrease=0.0, min_impurity_split=None,
@@ -437,8 +311,8 @@ DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
 
 >>> Test Results:
 
-    	Accuracy: 0.81813	Precision: 0.15918	    Recall: 0.08500	F1: 0.11082	F2: 0.09374
-	Total predictions: 15000	True positives:  170	False positives:  898    	False negatives: 1830	True negatives: 12102
+    	Accuracy: 0.81880	Precision: 0.15939	    Recall: 0.08400	F1: 0.11002	F2: 0.09278
+	Total predictions: 15000	True positives:  168	False positives:  886    	False negatives: 1832	True negatives: 12114
 
 ************************************
 
@@ -473,39 +347,21 @@ GaussianNB(priors=None)
 
 >>> Best Estimator:
 
-LogisticRegression(C=0.5, class_weight='balanced', dual=False,
-          fit_intercept=True, intercept_scaling=1, max_iter=100,
-          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
-          solver='liblinear', tol=1e-10, verbose=0, warm_start=False)
-
->>> Best Parameters:
-
-{'C': 0.5, 'tol': 1e-10, 'class_weight': 'balanced'}
-
->>> Test Results:
-
-    	Accuracy: 0.66647	Precision: 0.21760	    Recall: 0.57850	F1: 0.31625	F2: 0.43441
-	Total predictions: 15000	True positives: 1157	False positives: 4160    	False negatives:  843	True negatives: 8840
-
-************************************
-
->>> Best Estimator:
-
 DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
             max_features=None, max_leaf_nodes=None,
             min_impurity_decrease=0.0, min_impurity_split=None,
-            min_samples_leaf=1, min_samples_split=20,
+            min_samples_leaf=1, min_samples_split=25,
             min_weight_fraction_leaf=0.0, presort=False, random_state=None,
             splitter='best')
 
 >>> Best Parameters:
 
-{'min_samples_split': 20, 'criterion': 'entropy'}
+{'min_samples_split': 25, 'criterion': 'entropy'}
 
 >>> Test Results:
 
-    	Accuracy: 0.81333	Precision: 0.15157	    Recall: 0.08700	F1: 0.11055	F2: 0.09510
-	Total predictions: 15000	True positives:  174	False positives:  974    	False negatives: 1826	True negatives: 12026
+    	Accuracy: 0.81927	Precision: 0.13835	    Recall: 0.06800	F1: 0.09118	F2: 0.07570
+	Total predictions: 15000	True positives:  136	False positives:  847    	False negatives: 1864	True negatives: 12153
 
 ************************************
 
@@ -541,24 +397,6 @@ GaussianNB(priors=None)
 
 >>> Best Estimator:
 
-LogisticRegression(C=100000, class_weight='balanced', dual=False,
-          fit_intercept=True, intercept_scaling=1, max_iter=100,
-          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
-          solver='liblinear', tol=1e-10, verbose=0, warm_start=False)
-
->>> Best Parameters:
-
-{'C': 100000, 'tol': 1e-10, 'class_weight': 'balanced'}
-
->>> Test Results:
-
-    	Accuracy: 0.65420	Precision: 0.19757	    Recall: 0.52050	F1: 0.28642	F2: 0.39227
-	Total predictions: 15000	True positives: 1041	False positives: 4228    	False negatives:  959	True negatives: 8772
-
-************************************
-
->>> Best Estimator:
-
 DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
             max_features=None, max_leaf_nodes=None,
             min_impurity_decrease=0.0, min_impurity_split=None,
@@ -572,8 +410,8 @@ DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
 
 >>> Test Results:
 
-    	Accuracy: 0.81693	Precision: 0.15270	    Recall: 0.08200	F1: 0.10670	F2: 0.09037
-	Total predictions: 15000	True positives:  164	False positives:  910    	False negatives: 1836	True negatives: 12090
+    	Accuracy: 0.81627	Precision: 0.14870	    Recall: 0.08000	F1: 0.10403	F2: 0.08814
+	Total predictions: 15000	True positives:  160	False positives:  916    	False negatives: 1840	True negatives: 12084
 
 ************************************
 
@@ -610,24 +448,6 @@ GaussianNB(priors=None)
 
 >>> Best Estimator:
 
-LogisticRegression(C=100, class_weight='balanced', dual=False,
-          fit_intercept=True, intercept_scaling=1, max_iter=100,
-          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
-          solver='liblinear', tol=1e-10, verbose=0, warm_start=False)
-
->>> Best Parameters:
-
-{'C': 100, 'tol': 1e-10, 'class_weight': 'balanced'}
-
->>> Test Results:
-
-    	Accuracy: 0.60580	Precision: 0.18701	    Recall: 0.58450	F1: 0.28336	F2: 0.41015
-	Total predictions: 15000	True positives: 1169	False positives: 5082    	False negatives:  831	True negatives: 7918
-
-************************************
-
->>> Best Estimator:
-
 DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
             max_features=None, max_leaf_nodes=None,
             min_impurity_decrease=0.0, min_impurity_split=None,
@@ -641,8 +461,8 @@ DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
 
 >>> Test Results:
 
-    	Accuracy: 0.81680	Precision: 0.15047	    Recall: 0.08050	F1: 0.10489	F2: 0.08875
-	Total predictions: 15000	True positives:  161	False positives:  909    	False negatives: 1839	True negatives: 12091
+    	Accuracy: 0.81640	Precision: 0.15093	    Recall: 0.08150	F1: 0.10584	F2: 0.08976
+	Total predictions: 15000	True positives:  163	False positives:  917    	False negatives: 1837	True negatives: 12083
 
 ************************************
 
@@ -680,39 +500,21 @@ GaussianNB(priors=None)
 
 >>> Best Estimator:
 
-LogisticRegression(C=10000000000L, class_weight='balanced', dual=False,
-          fit_intercept=True, intercept_scaling=1, max_iter=100,
-          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
-          solver='liblinear', tol=1e-10, verbose=0, warm_start=False)
-
->>> Best Parameters:
-
-{'C': 10000000000L, 'tol': 1e-10, 'class_weight': 'balanced'}
-
->>> Test Results:
-
-    	Accuracy: 0.59960	Precision: 0.18654	    Recall: 0.59600	F1: 0.28415	F2: 0.41418
-	Total predictions: 15000	True positives: 1192	False positives: 5198    	False negatives:  808	True negatives: 7802
-
-************************************
-
->>> Best Estimator:
-
-DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
+DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
             max_features=None, max_leaf_nodes=None,
             min_impurity_decrease=0.0, min_impurity_split=None,
-            min_samples_leaf=1, min_samples_split=20,
+            min_samples_leaf=1, min_samples_split=15,
             min_weight_fraction_leaf=0.0, presort=False, random_state=None,
             splitter='best')
 
 >>> Best Parameters:
 
-{'min_samples_split': 20, 'criterion': 'entropy'}
+{'min_samples_split': 15, 'criterion': 'gini'}
 
 >>> Test Results:
 
-    	Accuracy: 0.91020	Precision: 0.68436	    Recall: 0.60600	F1: 0.64280	F2: 0.62020
-	Total predictions: 15000	True positives: 1212	False positives:  559    	False negatives:  788	True negatives: 12441
+    	Accuracy: 0.90120	Precision: 0.69157	    Recall: 0.46750	F1: 0.55788	F2: 0.49989
+	Total predictions: 15000	True positives:  935	False positives:  417    	False negatives: 1065	True negatives: 12583
 
 ************************************
 
@@ -751,39 +553,21 @@ GaussianNB(priors=None)
 
 >>> Best Estimator:
 
-LogisticRegression(C=100, class_weight='balanced', dual=False,
-          fit_intercept=True, intercept_scaling=1, max_iter=100,
-          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
-          solver='liblinear', tol=1e-10, verbose=0, warm_start=False)
-
->>> Best Parameters:
-
-{'C': 100, 'tol': 1e-10, 'class_weight': 'balanced'}
-
->>> Test Results:
-
-    	Accuracy: 0.61407	Precision: 0.19468	    Recall: 0.60400	F1: 0.29445	F2: 0.42520
-	Total predictions: 15000	True positives: 1208	False positives: 4997    	False negatives:  792	True negatives: 8003
-
-************************************
-
->>> Best Estimator:
-
-DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
             max_features=None, max_leaf_nodes=None,
             min_impurity_decrease=0.0, min_impurity_split=None,
-            min_samples_leaf=1, min_samples_split=20,
+            min_samples_leaf=1, min_samples_split=15,
             min_weight_fraction_leaf=0.0, presort=False, random_state=None,
             splitter='best')
 
 >>> Best Parameters:
 
-{'min_samples_split': 20, 'criterion': 'gini'}
+{'min_samples_split': 15, 'criterion': 'entropy'}
 
 >>> Test Results:
 
-    	Accuracy: 0.85273	Precision: 0.40999	    Recall: 0.23800	F1: 0.30117	F2: 0.25980
-	Total predictions: 15000	True positives:  476	False positives:  685    	False negatives: 1524	True negatives: 12315
+    	Accuracy: 0.91833	Precision: 0.72232	    Recall: 0.62950	F1: 0.67272	F2: 0.64610
+	Total predictions: 15000	True positives: 1259	False positives:  484    	False negatives:  741	True negatives: 12516
 
 ************************************
 
@@ -823,39 +607,21 @@ GaussianNB(priors=None)
 
 >>> Best Estimator:
 
-LogisticRegression(C=1000000000000000L, class_weight='balanced', dual=False,
-          fit_intercept=True, intercept_scaling=1, max_iter=100,
-          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
-          solver='liblinear', tol=1e-10, verbose=0, warm_start=False)
-
->>> Best Parameters:
-
-{'C': 1000000000000000L, 'tol': 1e-10, 'class_weight': 'balanced'}
-
->>> Test Results:
-
-    	Accuracy: 0.59327	Precision: 0.17447	    Recall: 0.54950	F1: 0.26485	F2: 0.38429
-	Total predictions: 15000	True positives: 1099	False positives: 5200    	False negatives:  901	True negatives: 7800
-
-************************************
-
->>> Best Estimator:
-
 DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
             max_features=None, max_leaf_nodes=None,
             min_impurity_decrease=0.0, min_impurity_split=None,
-            min_samples_leaf=1, min_samples_split=15,
+            min_samples_leaf=1, min_samples_split=20,
             min_weight_fraction_leaf=0.0, presort=False, random_state=None,
             splitter='best')
 
 >>> Best Parameters:
 
-{'min_samples_split': 15, 'criterion': 'entropy'}
+{'min_samples_split': 20, 'criterion': 'entropy'}
 
 >>> Test Results:
 
-    	Accuracy: 0.93947	Precision: 0.87042	    Recall: 0.64150	F1: 0.73863	F2: 0.67712
-	Total predictions: 15000	True positives: 1283	False positives:  191    	False negatives:  717	True negatives: 12809
+    	Accuracy: 0.93253	Precision: 0.81545	    Recall: 0.63850	F1: 0.71621	F2: 0.66747
+	Total predictions: 15000	True positives: 1277	False positives:  289    	False negatives:  723	True negatives: 12711
 
 ************************************
 
@@ -896,24 +662,6 @@ GaussianNB(priors=None)
 
 >>> Best Estimator:
 
-LogisticRegression(C=1000000000000000L, class_weight='balanced', dual=False,
-          fit_intercept=True, intercept_scaling=1, max_iter=100,
-          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
-          solver='liblinear', tol=1e-10, verbose=0, warm_start=False)
-
->>> Best Parameters:
-
-{'C': 1000000000000000L, 'tol': 1e-10, 'class_weight': 'balanced'}
-
->>> Test Results:
-
-    	Accuracy: 0.59747	Precision: 0.18114	    Recall: 0.57350	F1: 0.27532	F2: 0.40015
-	Total predictions: 15000	True positives: 1147	False positives: 5185    	False negatives:  853	True negatives: 7815
-
-************************************
-
->>> Best Estimator:
-
 DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
             max_features=None, max_leaf_nodes=None,
             min_impurity_decrease=0.0, min_impurity_split=None,
@@ -927,8 +675,8 @@ DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
 
 >>> Test Results:
 
-    	Accuracy: 0.93987	Precision: 0.87347	    Recall: 0.64200	F1: 0.74006	F2: 0.67793
-	Total predictions: 15000	True positives: 1284	False positives:  186    	False negatives:  716	True negatives: 12814
+    	Accuracy: 0.93913	Precision: 0.86847	    Recall: 0.64050	F1: 0.73727	F2: 0.67599
+	Total predictions: 15000	True positives: 1281	False positives:  194    	False negatives:  719	True negatives: 12806
 
 ************************************
 
@@ -970,24 +718,6 @@ GaussianNB(priors=None)
 
 >>> Best Estimator:
 
-LogisticRegression(C=100000, class_weight='balanced', dual=False,
-          fit_intercept=True, intercept_scaling=1, max_iter=100,
-          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
-          solver='liblinear', tol=1e-10, verbose=0, warm_start=False)
-
->>> Best Parameters:
-
-{'C': 100000, 'tol': 1e-10, 'class_weight': 'balanced'}
-
->>> Test Results:
-
-    	Accuracy: 0.65340	Precision: 0.18839	    Recall: 0.48350	F1: 0.27113	F2: 0.36816
-	Total predictions: 15000	True positives:  967	False positives: 4166    	False negatives: 1033	True negatives: 8834
-
-************************************
-
->>> Best Estimator:
-
 DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
             max_features=None, max_leaf_nodes=None,
             min_impurity_decrease=0.0, min_impurity_split=None,
@@ -1001,8 +731,8 @@ DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
 
 >>> Test Results:
 
-    	Accuracy: 0.92380	Precision: 0.78247	    Recall: 0.59350	F1: 0.67501	F2: 0.62362
-	Total predictions: 15000	True positives: 1187	False positives:  330    	False negatives:  813	True negatives: 12670
+    	Accuracy: 0.92420	Precision: 0.78519	    Recall: 0.59400	F1: 0.67635	F2: 0.62441
+	Total predictions: 15000	True positives: 1188	False positives:  325    	False negatives:  812	True negatives: 12675
 
 ************************************
 
@@ -1045,24 +775,6 @@ GaussianNB(priors=None)
 
 >>> Best Estimator:
 
-LogisticRegression(C=0.5, class_weight='balanced', dual=False,
-          fit_intercept=True, intercept_scaling=1, max_iter=100,
-          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
-          solver='liblinear', tol=1e-10, verbose=0, warm_start=False)
-
->>> Best Parameters:
-
-{'C': 0.5, 'tol': 1e-10, 'class_weight': 'balanced'}
-
->>> Test Results:
-
-    	Accuracy: 0.61613	Precision: 0.15599	    Recall: 0.42600	F1: 0.22836	F2: 0.31645
-	Total predictions: 15000	True positives:  852	False positives: 4610    	False negatives: 1148	True negatives: 8390
-
-************************************
-
->>> Best Estimator:
-
 DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
             max_features=None, max_leaf_nodes=None,
             min_impurity_decrease=0.0, min_impurity_split=None,
@@ -1076,8 +788,8 @@ DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
 
 >>> Test Results:
 
-    	Accuracy: 0.92053	Precision: 0.76336	    Recall: 0.58550	F1: 0.66271	F2: 0.61412
-	Total predictions: 15000	True positives: 1171	False positives:  363    	False negatives:  829	True negatives: 12637
+    	Accuracy: 0.92127	Precision: 0.76368	    Recall: 0.59300	F1: 0.66760	F2: 0.62075
+	Total predictions: 15000	True positives: 1186	False positives:  367    	False negatives:  814	True negatives: 12633
 
 ************************************
 
@@ -1121,24 +833,6 @@ GaussianNB(priors=None)
 
 >>> Best Estimator:
 
-LogisticRegression(C=100000, class_weight='balanced', dual=False,
-          fit_intercept=True, intercept_scaling=1, max_iter=100,
-          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
-          solver='liblinear', tol=1e-10, verbose=0, warm_start=False)
-
->>> Best Parameters:
-
-{'C': 100000, 'tol': 1e-10, 'class_weight': 'balanced'}
-
->>> Test Results:
-
-    	Accuracy: 0.62987	Precision: 0.16528	    Recall: 0.43850	F1: 0.24008	F2: 0.32955
-	Total predictions: 15000	True positives:  877	False positives: 4429    	False negatives: 1123	True negatives: 8571
-
-************************************
-
->>> Best Estimator:
-
 DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
             max_features=None, max_leaf_nodes=None,
             min_impurity_decrease=0.0, min_impurity_split=None,
@@ -1152,8 +846,8 @@ DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
 
 >>> Test Results:
 
-    	Accuracy: 0.92220	Precision: 0.77169	    Recall: 0.59150	F1: 0.66969	F2: 0.62048
-	Total predictions: 15000	True positives: 1183	False positives:  350    	False negatives:  817	True negatives: 12650
+    	Accuracy: 0.92120	Precision: 0.76455	    Recall: 0.59100	F1: 0.66667	F2: 0.61911
+	Total predictions: 15000	True positives: 1182	False positives:  364    	False negatives:  818	True negatives: 12636
 
 ************************************
 
@@ -1198,24 +892,6 @@ GaussianNB(priors=None)
 
 >>> Best Estimator:
 
-LogisticRegression(C=1000000000000000L, class_weight='balanced', dual=False,
-          fit_intercept=True, intercept_scaling=1, max_iter=100,
-          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
-          solver='liblinear', tol=1e-10, verbose=0, warm_start=False)
-
->>> Best Parameters:
-
-{'C': 1000000000000000L, 'tol': 1e-10, 'class_weight': 'balanced'}
-
->>> Test Results:
-
-    	Accuracy: 0.69367	Precision: 0.22516	    Recall: 0.53150	F1: 0.31632	F2: 0.41781
-	Total predictions: 15000	True positives: 1063	False positives: 3658    	False negatives:  937	True negatives: 9342
-
-************************************
-
->>> Best Estimator:
-
 DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
             max_features=None, max_leaf_nodes=None,
             min_impurity_decrease=0.0, min_impurity_split=None,
@@ -1229,8 +905,8 @@ DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
 
 >>> Test Results:
 
-    	Accuracy: 0.91927	Precision: 0.75370	    Recall: 0.58600	F1: 0.65935	F2: 0.61329
-	Total predictions: 15000	True positives: 1172	False positives:  383    	False negatives:  828	True negatives: 12617
+    	Accuracy: 0.92020	Precision: 0.76021	    Recall: 0.58650	F1: 0.66215	F2: 0.61459
+	Total predictions: 15000	True positives: 1173	False positives:  370    	False negatives:  827	True negatives: 12630
 
 ************************************
 
@@ -1276,24 +952,6 @@ GaussianNB(priors=None)
 
 >>> Best Estimator:
 
-LogisticRegression(C=1000, class_weight='balanced', dual=False,
-          fit_intercept=True, intercept_scaling=1, max_iter=100,
-          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
-          solver='liblinear', tol=1e-10, verbose=0, warm_start=False)
-
->>> Best Parameters:
-
-{'C': 1000, 'tol': 1e-10, 'class_weight': 'balanced'}
-
->>> Test Results:
-
-    	Accuracy: 0.69727	Precision: 0.22742	    Recall: 0.53000	F1: 0.31827	F2: 0.41861
-	Total predictions: 15000	True positives: 1060	False positives: 3601    	False negatives:  940	True negatives: 9399
-
-************************************
-
->>> Best Estimator:
-
 DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
             max_features=None, max_leaf_nodes=None,
             min_impurity_decrease=0.0, min_impurity_split=None,
@@ -1307,8 +965,8 @@ DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
 
 >>> Test Results:
 
-    	Accuracy: 0.92060	Precision: 0.76352	    Recall: 0.58600	F1: 0.66308	F2: 0.61458
-	Total predictions: 15000	True positives: 1172	False positives:  363    	False negatives:  828	True negatives: 12637
+    	Accuracy: 0.92087	Precision: 0.76243	    Recall: 0.59050	F1: 0.66554	F2: 0.61839
+	Total predictions: 15000	True positives: 1181	False positives:  368    	False negatives:  819	True negatives: 12632
 
 ************************************
 
@@ -1355,24 +1013,6 @@ GaussianNB(priors=None)
 
 >>> Best Estimator:
 
-LogisticRegression(C=10000000000L, class_weight='balanced', dual=False,
-          fit_intercept=True, intercept_scaling=1, max_iter=100,
-          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
-          solver='liblinear', tol=1e-05, verbose=0, warm_start=False)
-
->>> Best Parameters:
-
-{'C': 10000000000L, 'tol': 1e-05, 'class_weight': 'balanced'}
-
->>> Test Results:
-
-    	Accuracy: 0.66680	Precision: 0.20539	    Recall: 0.52250	F1: 0.29486	F2: 0.39922
-	Total predictions: 15000	True positives: 1045	False positives: 4043    	False negatives:  955	True negatives: 8957
-
-************************************
-
->>> Best Estimator:
-
 DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
             max_features=None, max_leaf_nodes=None,
             min_impurity_decrease=0.0, min_impurity_split=None,
@@ -1386,8 +1026,8 @@ DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
 
 >>> Test Results:
 
-    	Accuracy: 0.92013	Precision: 0.76005	    Recall: 0.58600	F1: 0.66177	F2: 0.61413
-	Total predictions: 15000	True positives: 1172	False positives:  370    	False negatives:  828	True negatives: 12630
+    	Accuracy: 0.92020	Precision: 0.75853	    Recall: 0.58900	F1: 0.66310	F2: 0.61656
+	Total predictions: 15000	True positives: 1178	False positives:  375    	False negatives:  822	True negatives: 12625
 
 ************************************
 
@@ -1435,24 +1075,6 @@ GaussianNB(priors=None)
 
 >>> Best Estimator:
 
-LogisticRegression(C=0.5, class_weight='balanced', dual=False,
-          fit_intercept=True, intercept_scaling=1, max_iter=100,
-          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
-          solver='liblinear', tol=1e-05, verbose=0, warm_start=False)
-
->>> Best Parameters:
-
-{'C': 0.5, 'tol': 1e-05, 'class_weight': 'balanced'}
-
->>> Test Results:
-
-    	Accuracy: 0.66567	Precision: 0.20366	    Recall: 0.51800	F1: 0.29237	F2: 0.39581
-	Total predictions: 15000	True positives: 1036	False positives: 4051    	False negatives:  964	True negatives: 8949
-
-************************************
-
->>> Best Estimator:
-
 DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
             max_features=None, max_leaf_nodes=None,
             min_impurity_decrease=0.0, min_impurity_split=None,
@@ -1466,8 +1088,8 @@ DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
 
 >>> Test Results:
 
-    	Accuracy: 0.91940	Precision: 0.75079	    Recall: 0.59200	F1: 0.66201	F2: 0.61815
-	Total predictions: 15000	True positives: 1184	False positives:  393    	False negatives:  816	True negatives: 12607
+    	Accuracy: 0.91960	Precision: 0.75613	    Recall: 0.58600	F1: 0.66028	F2: 0.61361
+	Total predictions: 15000	True positives: 1172	False positives:  378    	False negatives:  828	True negatives: 12622
 
 ************************************
 
