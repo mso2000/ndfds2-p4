@@ -15,22 +15,28 @@ Três registros foram removidos: o primeiro era um totalizador (_TOTAL_) criado 
 
 Por fim, também reparei que 2 registros foram importados incorretamente da planilha original (os dados estavam deslocados de suas colunas corretas) e fiz o acerto manual dos mesmos (_BELFER ROBERT_ e _BHATNAGAR SANJAY_).
 
+Com isso a disponibilidade final dos dados em cada atributo está distribuída dessa maneira:
+
+![Disponibilidade dos dados](/other/Disponibilidade.jpg)
 
 #### 2) What features did you end up using in your POI identifier, and what selection process did you use to pick them? Did you have to do any scaling? Why or why not? As part of the assignment, you should attempt to engineer your own feature that does not come ready-made in the dataset -- explain what feature you tried to make, and the rationale behind it. (You do not necessarily have to use it in the final analysis, only engineer and test it.) In your feature selection step, if you used an algorithm like a decision tree, please also give the feature importances of the features that you use, and if you used an automated feature selection function like SelectKBest, please report the feature scores and reasons for your choice of parameter values.  [relevant rubric items: &quot;create new features&quot;, &quot;intelligently select features&quot;, &quot;properly scale features&quot;]
 
-**Resposta:** Os atributos escolhidos foram selecionados usando o algoritmo _&quot;SelectKBest&quot;._ Para chegar na quantidade de atributos ideais, usei uma técnica de força bruta que começava com apenas 1 atributo para ser selecionado pelo _&quot;SelectKBest&quot;_ e em seguida testava os classificadores com apenas esse atributo, em seguida utilizei 2 atributos selecionados pelo _&quot;SelectKBest&quot;_ e repeti os testes. E isso foi se repetindo até chegar no total dos 21 atributos possíveis (incluindo os 2 novos, explicados mais abaixo) para serem testados com os classificadores. Após análise de todos resultados, o número ideal de atributos para o melhor classificador se resumiu a 11 com os seguintes scores do _&quot;SelectKBest&quot;_:
+**Resposta:** Os atributos escolhidos foram selecionados usando o algoritmo _&quot;SelectKBest&quot;._ Para chegar na quantidade de atributos ideais, usei uma técnica de força bruta que começava com apenas 1 atributo para ser selecionado pelo _&quot;SelectKBest&quot;_ e em seguida testava os classificadores com apenas esse atributo, em seguida utilizei 2 atributos selecionados pelo _&quot;SelectKBest&quot;_ e repeti os testes. E isso foi se repetindo até chegar no total dos 21 atributos possíveis (incluindo os 2 novos, explicados mais abaixo) para serem testados com os classificadores. Após análise de todos resultados, o número ideal de atributos para o melhor classificador se resumiu a 14 com os seguintes scores do _&quot;SelectKBest&quot;_:
 
-- Valor total em ações (22.51)
-- Opções de ações exercidas (22.35)
-- Bônus (20.79)
-- Salário (18.29)
-- Receita diferida (11.42)
-- Incentivo de longo prazo (9.92)
-- Pagamentos totais (9.28)
-- Ações restritas (8.83)
-- Recibos compartilhados com POI (8.59)
-- Adiantamentos de empréstimos (7.18)
-- % dos e-mails totais destinados para um POI (16.41)
+1. Valor total em ações (22.51)
+2. Opções de ações exercidas (22.35)
+3. Bônus (20.79)
+4. Salário (18.29)
+5. Receita diferida (11.42)
+6. Incentivo de longo prazo (9.92)
+7. Pagamentos totais (9.28)
+8. Ações restritas (8.83)
+9. Recibos compartilhados com POI (8.59)
+10. Adiantamentos de empréstimos (7.18)
+11. % dos e-mails totais recebidos de um POI (5.83)
+12. Despesas (5.42)
+13. Quantidade de e-mails recebidos de um POI (5.24)
+14. % dos e-mails totais destinados para um POI (4.60)
 
 Não houve necessidade de escalonamento dos atributos uma vez que essa técnica não afeta os algoritmos selecionados para os testes.
 
@@ -41,9 +47,29 @@ Dois atributos foram computados e adicionados ao conjunto original:
 
 Como e-mails são um meio comum de comunicação em empresas, a quantidade total poderia não ser relevante para identificar um suspeito, então optei por trabalhar apenas com o percentual das mensagens que foram trocadas com um POI para tentar identificar uma possível afinidade do suspeito nas fraudes. Para funcionários que já estavam marcados como POI não computei esses dados para não enviesar o classificador.
 
-O % dos e-mails totais destinados para um POI acabou se mostrando como uma boa escolha ficando em décimo primeiro lugar dentre os atributos selecionados para o melhor classificador, como listado acima. Curiosamente, o atributo de adiantamentos de empréstimos (_&quot;loan advances&quot;_) que só foi informado em 3 registro, como já comentado na resposta da pergunta 1, ficou em décimo lugar.
+A inclusão dos 2 novos atributos acabou se mostrando uma boa escolha visto que apareceram no ranking dentre os 14 atributos selecionados para o melhor classificador, como listado acima. Curiosamente, o atributo de adiantamentos de empréstimos (_&quot;loan advances&quot;_) que só foi informado em 3 registro, como já comentado na resposta da pergunta 1, ficou em décimo lugar.
 
-**OBS:** Mais detalhes sobre os relatórios gerados com os testes dos classificadores estão nos apêndices desse documento.
+Abaixo podemos observar o impacto da inclusão dos novos atributos e a quantidade total de atributos selecionados nas métricas (precisão e abrangência) de 2 classificadores ( _&quot;Decision Tree&quot;_ e  _&quot;Gaussian Naive Bayes&quot;_):
+
+<p align="center">
+  <img src="/other/Prec_DT (new x old).jpg" width="400" title="Árvore de Decisão - Precisão por tipo e quantidade de atributos do K-Best">
+  <img src="/other/Recl_DT (new x old).jpg" width="400" title="Árvore de Decisão - Abrangência por tipo e quantidade de atributos do K-Best"><br><br>
+  <img src="/other/Prec_NB (new x old).jpg" width="400" title="Naive Bayes - Precisão por tipo e quantidade de atributos do K-Best">
+  <img src="/other/Recl_NB (new x old).jpg" width="400" title="Naive Bayes - Abrangência por tipo e quantidade de atributos do K-Best">
+</p>
+
+**OBS:** Podemos perceber que a precisão e abrangência do _&quot;Decision Tree&quot;_ atingem o pico de performance com 14 atributos (usando os novos atributos), enquanto que no _&quot;Gaussian Naive Bayes&quot;_ a inclusão dos novos atributos praticamente não influenciou o seu desempenho.
+
+Aqui uma re-leitura dos gráficos acima olhando para ambas as métricas simultâneamente em cada classificador usando tantos os atributos novos quanto apenas os originais:
+
+<p align="center">
+  <img src="/other/Resultados_DT (novos).jpg" width="400" title="Árvore de Decisão - Resultados por número de atributos do K-Best (com os novos)">
+  <img src="/other/Resultados_DT (originais).jpg" width="400" title="Árvore de Decisão - Resultados por número de atributos do K-Best (apenas originais)"><br><br>
+  <img src="/other/Resultados_NB (novos).jpg" width="400" title="Naive Bayes - Resultados por número de atributos do K-Best (com os novos)">
+  <img src="/other/Resultados_NB (originais).jpg" width="400" title="Naive Bayes - Resultados por número de atributos do K-Best (apenas originais)">
+</p>
+
+**OBS:** Todos os dados detalhados sobre os relatórios gerados com diversos testes dos classificadores estão relacionados nos apêndices deste documento.
 
 
 #### 3) What algorithm did you end up using? What other one(s) did you try? How did model performance differ between algorithms?  [relevant rubric item: &quot;pick an algorithm&quot;]
@@ -53,23 +79,30 @@ O % dos e-mails totais destinados para um POI acabou se mostrando como uma boa e
 - _criterion=&#39;entropy&#39;_
 - _min\_samples\_split=15_
 
-Também foram testados _&quot;Gaussian Naive Bayes&quot;_ e _&quot;Logistic Regression&quot;_.
+Também foi testado o _&quot;Gaussian Naive Bayes&quot;_.
 
-Quando usei um dos atributos novos, o melhor resultado obtido foram com 11 no total selecionados pelo _&quot;SelectKBest&quot;_:
-
-| **Classificador** | **Acurácia (****&quot;Accuracy&quot;****)** | **Precisão (****&quot;Precision&quot;****)** | **Abrangência (****&quot;Recall&quot;****)** |
-| --- | --- | --- | --- |
-| **Gaussian Naive Bayes (padrão)** | 0.8223 | 0.3258 | 0.3115 |
-| **DecisionTree (ajustado)** | **0.9299** | **0.7881** | **0.6490** |
-| **LogisticRegression (ajustado)** | 0.5996 | 0.1865 | 0.5960 |
-
-Fazendo a mesma análise usando apenas os atributos originais, o melhor resultado obtido foi com apenas 5 atributos selecionados pelo _&quot;SelectKBest&quot;_ e o Gaussian Naive Bayes mostrou melhor performance:
+Quando usei os atributos novos, o melhor resultado obtido foram com 11 no total selecionados pelo _&quot;SelectKBest&quot;_ para o _&quot;Gaussian Naive Bayes&quot;_ (onde apenas um dos novos foram selecionados, apesar de que a performance foi praticamente a mesma com 14 atributos estando os 2 novos presentes) e 14 no total para o  _&quot;Decision Tree&quot;_ (com ambos os novos atributos):
 
 | **Classificador** | **Acurácia (****&quot;Accuracy&quot;****)** | **Precisão (****&quot;Precision&quot;****)** | **Abrangência (****&quot;Recall&quot;****)** |
 | --- | --- | --- | --- |
-| **Gaussian Naive Bayes (padrão)** | **0.8470** | **0.4541** | **0.3510** |
-| **DecisionTree (ajustado)** | 0.8201 | 0.3401 | 0.2755 |
-| **LogisticRegression (ajustado)** | 0.6516 | 0.2093 | 0.5180 |
+| **Gaussian Naive Bayes (k=11)** | 0.8223 | 0.3258 | 0.3115 |
+| **DecisionTree (ajustado, k=14)** | **0.9402** | **0.8785** | **0.6400** |
+
+Fazendo a mesma análise usando apenas os atributos originais, o melhor resultado obtido foi com 12 atributos selecionados pelo _&quot;SelectKBest&quot;_ e o _&quot;Gaussian Naive Bayes&quot;_ mostrou melhor performance dessa vez por atingir a meta mínima de 0.3 para as métricas de precisão e abrangência exigidas no projeto:
+
+| **Classificador** | **Acurácia (****&quot;Accuracy&quot;****)** | **Precisão (****&quot;Precision&quot;****)** | **Abrangência (****&quot;Recall&quot;****)** |
+| --- | --- | --- | --- |
+| **Gaussian Naive Bayes (k=12)** | **0.8227** | **0.3267** | **0.3105** |
+| **DecisionTree (ajustado, k=12)** | 0.8451 | 0.3917 | 0.2920 |
+
+Aqui podemos observar o desempenho de cada um dos classificadores para as métricas de precisão e abrangência, usando tanto os novos atributos quanto apenas os originais:
+
+<p align="center">
+  <img src="/other/Prec_NB_x_DT (novos).jpg" width="400" title="Precisão por número de atributos do K-Best (com os novos) x Classificador">
+  <img src="/other/Recl_NB_x_DT (novos).jpg" width="400" title="Abrangência por número de atributos do K-Best (com os novos) x Classificador"><br><br>
+  <img src="/other/Prec_NB_x_DT (originais).jpg" width="400" title="Precisão por número de atributos do K-Best (apenas originais) x Classificador">
+  <img src="/other/Recl_NB_x_DT (originais).jpg" width="400" title="Abrangência por número de atributos do K-Best (apenas originais) x Classificador">
+</p>
 
 
 #### 4) What does it mean to tune the parameters of an algorithm, and what can happen if you don&#39;t do this well?  How did you tune the parameters of your particular algorithm? What parameters did you tune? (Some algorithms do not have parameters that you need to tune -- if this is the case for the one you picked, identify and briefly explain how you would have done it for the model that was not your final choice or a different model that does utilize parameter tuning, e.g. a decision tree classifier).  ****[relevant rubric items: &quot;discuss parameter tuning&quot;, &quot;tune the algorithm&quot;]
@@ -84,11 +117,6 @@ Para o classificador _&quot;Decision Tree&quot;_ foram usadas as seguintes combi
 
 - **criterion** _[&#39;gini&#39;, &#39;entropy&#39;] - função para medir a qualidade de uma divisão, onde &quot;gini&quot; corresponde à_ [_impureza Gini_](https://en.wikipedia.org/wiki/Decision_tree_learning#Gini_impurity) _e &quot;entropy&quot; corresponde ao_ [_ganho de informação_](https://en.wikipedia.org/wiki/Decision_tree_learning#Information_gain)_._
 - **min\_samples\_split** _[10,15,20,25] - a quantidade mínima de amostras requeridas para dividir um nó interno_
-
-Já para o classificador _&quot;Logistic Regression&quot;_ foram usadas as seguintes combinações de valores dos seguinte parâmetros:
-
-- **C** _[0.05, 0.5, 1, 10, 10\*\*2, 10\*\*3, 10\*\*5, 10\*\*10, 10\*\*15] - Controla o limite de troca entre uma fronteira de decisão suave e outra que classifica todos os pontos de treinamento corretamente._
-- **tol** _[10\*\*-1, 10\*\*-2, 10\*\*-4, 10\*\*-5, 10\*\*-6, 10\*\*-10, 10\*\*-15] - tolerância para o critério de interrupção_
 
 
 #### 5) What is validation, and what&#39;s a classic mistake you can make if you do it wrong? How did you validate your analysis?  [relevant rubric items: &quot;discuss validation&quot;, &quot;validation strategy&quot;]
@@ -120,6 +148,7 @@ Em anexo ao projeto estou encaminhando relatórios de 4 execuções para escolha
 - **classifier\_evaluation\_NO\_FILTERED\_OLD\_FEATURES.txt** - Mesma coisa que o anterior, mas considerando apenas os atributos originais do conjunto de dados
 - **classifier\_evaluation\_FILTERED\_NEW\_FEATURES.txt** - Mesma coisa que o primeiro, mas lista apenas os classificadores que obtiveram métricas de _&quot;precision&quot;_ e _&quot;recall&quot;_ com um valor mínimo de 0.3
 - **classifier\_evaluation\_ FILTERED\_OLD\_FEATURES.txt** - Mesma coisa que o anterior, mas considerando apenas os atributos originais do conjunto de dados
+- **Dados.xlsx** - Todos os dados das métricas que aparecem nos arquivos acima organizados em planilhas e com outras métricas adicionais (acurácia, F1 e F2)
 
 **OBS:** O programa &quot;poi\_id.py&quot; permite que os relatórios acima sejam gerados com base em escolhas durante a sua execução:
 
